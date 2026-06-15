@@ -1,236 +1,43 @@
-<!doctype html>
-<html lang="tr">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hakikat Dergisi Profesyonel Okuyucu v7</title>
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hakikat Dergisi Okuyucu v8</title>
 <style>
-:root{--bg:#07101f;--panel:#0d1728;--panel2:#13223a;--line:#263b5f;--txt:#edf5ff;--muted:#9fb1c8;--brand:#43ddcd;--gold:#ffc64b;--red:#a9405a;--green:#29c27f;--blue:#29406d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#142946 0,#07101f 48%,#050914 100%);color:var(--txt);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial}.app{height:100vh;display:grid;grid-template-columns:350px 390px 1fr;overflow:hidden}.side,.middle,.reader{min-width:0;border-right:1px solid var(--line);background:rgba(8,16,30,.72);backdrop-filter:blur(10px)}.head{padding:18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}.logo{width:44px;height:44px;border-radius:16px;background:linear-gradient(135deg,#ffd45d,#ff892f);display:grid;place-items:center;color:#111;font-weight:900}.title h1{font-size:19px;margin:0}.title p{margin:3px 0 0;color:var(--muted);font-size:13px}.tools{padding:14px;display:grid;gap:10px}.row{display:flex;gap:8px}.inp,.sel{width:100%;border:1px solid var(--line);background:#091326;color:var(--txt);border-radius:14px;padding:12px}.btn{border:0;border-radius:14px;padding:11px 15px;font-weight:800;color:#06101e;background:var(--gold);cursor:pointer}.btn.secondary{background:#233a66;color:white}.btn.play{background:var(--brand);color:#041316}.btn.stop{background:var(--red);color:white}.btn:disabled{opacity:.45;cursor:not-allowed}.hint{margin:0 14px 14px;padding:12px;border:1px dashed #916f18;border-radius:14px;color:#ffe596;background:#17170d;font-size:12px}.list{height:calc(100vh - 230px);overflow:auto;padding:0 14px 18px}.issue{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:13px;border:1px solid transparent;border-radius:16px;margin:8px 0;background:#111a2d;cursor:pointer}.issue:hover,.issue.active{border-color:var(--gold);background:#182640}.coverMini{height:78px;border-radius:10px;background:linear-gradient(150deg,#233d67,#111827);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);font-weight:900}.issue b{display:block}.issue small{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.chip{font-size:10px;padding:4px 7px;border-radius:999px;background:#213452;color:#c6d6ee}.middle{overflow:auto}.issueView{padding:18px}.bigCover{height:300px;border-radius:24px;background:linear-gradient(160deg,#1c3760,#070d19);border:1px solid var(--line);display:grid;place-items:center;text-align:center;box-shadow:0 18px 45px rgba(0,0,0,.3);overflow:hidden}.bigCover img{max-width:100%;max-height:100%;object-fit:contain}.bigCover .fallback{font-size:34px;font-weight:900;color:var(--gold)}.meta{display:flex;gap:10px;margin:14px 0}.stat{flex:1;background:#15223a;border:1px solid var(--line);border-radius:14px;padding:10px}.stat small{color:var(--gold);display:block}.sectionTitle{font-size:18px;margin:18px 0 10px}.article{padding:12px;border:1px solid var(--line);border-radius:14px;background:#101b2f;margin:8px 0;cursor:pointer}.article:hover,.article.active{border-color:var(--brand);background:#142741}.article b{display:block}.article small{color:var(--muted)}.reader{display:grid;grid-template-rows:auto 1fr}.topbar{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;justify-content:space-between}.rtitle{min-width:0}.rtitle h2{margin:0;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rtitle p{margin:3px 0 0;color:var(--muted);font-size:12px}.controls{display:flex;gap:8px;align-items:center}.voice{max-width:230px}.progress{width:140px;height:8px;border:1px solid var(--line);border-radius:99px;overflow:hidden}.bar{height:100%;background:var(--brand);width:0}.content{overflow:auto;padding:26px 34px 70px}.empty{height:100%;display:grid;place-items:center;text-align:center;color:#a9c6ef}.sentence{font-size:20px;line-height:1.75;margin:0 0 13px;padding:9px 12px;border-radius:14px;color:#e8f1ff}.sentence.done{color:#8c9ab1}.sentence.active{background:linear-gradient(90deg,rgba(255,198,75,.28),rgba(67,221,205,.1));outline:1px solid rgba(255,198,75,.5);color:white}.sentence.next{color:#dcecff}.load{position:fixed;inset:auto 20px 20px auto;background:#111a2d;border:1px solid var(--line);padding:12px 15px;border-radius:14px;color:#dbe8ff;box-shadow:0 15px 40px rgba(0,0,0,.4)}.app.catalog{grid-template-columns:350px 1fr}.app.catalog .reader{display:none}.app.catalog .middle{display:block}.backList{background:#1e355e;color:white}@media(max-width:1150px){.app{grid-template-columns:330px 1fr}.middle{display:none}}@media(max-width:720px){.app{display:block;overflow:auto}.side,.middle,.reader{height:auto;border-right:0}.list{height:360px}.middle{display:block}.reader{min-height:650px}.topbar{display:grid}.controls{flex-wrap:wrap}.content{padding:18px}.sentence{font-size:18px}.app.reading .side,.app.reading .middle{display:none}.app.catalog .reader{display:none}.app.catalog .side,.app.catalog .middle{display:block}}
-</style>
-</head>
-<body>
-<div id="app" class="app catalog">
-<aside class="side">
-  <div class="head"><div class="logo">H</div><div class="title"><h1>Hakikat Dergisi</h1><p>Kapak, sayı, konu, makale ve sesli okuma.</p></div></div>
-  <div class="tools">
-    <div class="row"><input id="q" class="inp" placeholder="Sayı, tarih, konu ara..."><button id="fetchBtn" class="btn">Çek</button></div>
-    <select id="mode" class="sel"><option value="jina">Jina Reader proxy - CORS güvenli</option></select>
-    <div class="row"><button id="saveBtn" class="btn secondary">JSON Kaydet</button><label class="btn secondary" style="text-align:center"><input id="fileIn" type="file" accept="application/json" hidden>JSON Yükle</label></div>
-  </div>
-  <p class="hint">Not: Netlify/GitHub Pages üzerinde doğrudan çekim CORS nedeniyle engellenebilir. Bu sürüm proxy ile okur ve çekilen veriyi IndexedDB/localStorage içine kaydeder.</p>
-  <div id="issueList" class="list"></div>
-</aside>
-<section class="middle"><div id="issueView" class="issueView"><div class="empty"><div><h2>Önce “Çek” düğmesine basın.</h2><p>Sonra soldan dergi sayısı seçin.</p></div></div></div></section>
-<main class="reader">
-  <div class="topbar">
-    <div class="rtitle"><h2 id="readerTitle">Dergi seçiniz</h2><p id="readerSub">Makale seçildiğinde cümleler burada açılır.</p></div>
-    <div class="controls"><button id="listBtn" class="btn secondary">📚 Listeye Dön</button><button id="prevBtn" class="btn secondary">◀ Geri</button><button id="nextBtn" class="btn secondary">İleri ▶</button><button id="playBtn" class="btn play">Sesli Oku</button><button id="stopBtn" class="btn stop">Durdur</button><select id="voiceSel" class="sel voice"></select><select id="rateSel" class="sel" style="width:90px"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.15">1.15x</option><option value="1.3">1.3x</option></select><div class="progress"><div id="bar" class="bar"></div></div><span id="count">0/0</span></div>
-  </div>
-  <div id="content" class="content"><div class="empty"><div><h2>Okuma ekranı hazır.</h2><p>Soldan sayı, ortadan makale seçin.</p></div></div></div>
-</main>
-</div>
-<div id="toast" class="load" style="display:none"></div>
+:root{--bg:#07101d;--p:#0d1728;--p2:#13223a;--ln:#29405f;--t:#eef6ff;--m:#a7b7ca;--g:#42dccd;--y:#ffc84b;--r:#a9445f}*{box-sizing:border-box}body{margin:0;background:#07101d;color:var(--t);font:15px/1.5 system-ui,Segoe UI,Arial}.app{height:100vh;display:grid;grid-template-columns:340px 380px 1fr;overflow:hidden}.side,.mid,.read{border-right:1px solid var(--ln);min-width:0;background:linear-gradient(180deg,#0b1527,#07101d)}.head{display:flex;gap:12px;align-items:center;padding:16px;border-bottom:1px solid var(--ln)}.logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#ffd765,#ff8c2e);display:grid;place-items:center;color:#111;font-weight:900}.head h1{font-size:19px;margin:0}.head p{margin:3px 0 0;color:var(--m);font-size:12px}.tools{padding:12px;display:grid;gap:9px}.row{display:flex;gap:8px}.inp,.sel{width:100%;border:1px solid var(--ln);background:#081326;color:var(--t);border-radius:13px;padding:11px}.btn{border:0;border-radius:13px;padding:11px 14px;font-weight:900;background:var(--y);color:#06101e;cursor:pointer}.btn.b{background:#233d6d;color:#fff}.btn.g{background:var(--g);color:#041415}.btn.r{background:var(--r);color:#fff}.note{margin:0 12px 10px;padding:11px;border:1px dashed #886b1e;border-radius:13px;background:#17170c;color:#ffe89a;font-size:12px}.list{height:calc(100vh - 230px);overflow:auto;padding:0 12px 18px}.issue{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:12px;border:1px solid transparent;border-radius:15px;margin:8px 0;background:#111b2e;cursor:pointer}.issue:hover,.issue.active{border-color:var(--y);background:#172743}.mini{height:76px;border-radius:10px;background:#173052;border:1px solid var(--ln);display:grid;place-items:center;color:var(--y);font-weight:900}.mini img{width:100%;height:100%;object-fit:cover;border-radius:9px}.issue b{display:block}.issue small{color:var(--m)}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}.chip{font-size:10px;border-radius:999px;background:#213451;color:#d3e4ff;padding:4px 7px}.mid{overflow:auto}.box{padding:18px}.cover{height:300px;border:1px solid var(--ln);border-radius:23px;background:linear-gradient(150deg,#1a365f,#070d18);display:grid;place-items:center;text-align:center;overflow:hidden}.cover img{max-width:100%;max-height:100%;object-fit:contain}.fallback{font-size:34px;font-weight:900;color:var(--y)}.meta{display:flex;gap:9px;margin:13px 0}.stat{flex:1;background:#15243b;border:1px solid var(--ln);border-radius:13px;padding:10px}.stat small{display:block;color:var(--y)}.topic{padding:13px;border:1px solid var(--g);border-radius:14px;background:#132942;margin-top:10px}.read{display:grid;grid-template-rows:auto 1fr}.top{padding:13px 16px;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;gap:10px;align-items:center}.rt{min-width:0}.rt h2{font-size:18px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rt p{margin:3px 0 0;color:var(--m);font-size:12px}.ctrl{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.voice{max-width:220px}.prog{width:130px;height:8px;border:1px solid var(--ln);border-radius:99px;overflow:hidden}.bar{height:100%;background:var(--g);width:0}.content{overflow:auto;padding:28px 34px 80px}.empty{height:100%;display:grid;place-items:center;text-align:center;color:#b7c9e5}.s{font-size:20px;line-height:1.75;margin:0 0 12px;padding:9px 12px;border-radius:13px;color:#e5f0ff}.s.done{color:#8290a4}.s.active{background:linear-gradient(90deg,rgba(255,200,75,.3),rgba(66,220,205,.1));outline:1px solid rgba(255,200,75,.55);color:white}.toast{position:fixed;right:18px;bottom:18px;background:#111b2e;border:1px solid var(--ln);border-radius:13px;padding:12px 14px;color:#e7f2ff;z-index:10}.app.catalog{grid-template-columns:340px 1fr}.app.catalog .read{display:none}@media(max-width:1150px){.app{grid-template-columns:330px 1fr}.mid{display:none}.app.catalog .mid{display:block}}@media(max-width:720px){.app{display:block;overflow:auto}.side,.mid,.read{border-right:0}.list{height:360px}.read{min-height:650px}.top{display:grid}.content{padding:18px}.s{font-size:18px}.app.reading .side,.app.reading .mid{display:none}.app.catalog .read{display:none}.app.catalog .side,.app.catalog .mid{display:block}}
+</style></head><body><div id="app" class="app catalog"><aside class="side"><div class="head"><div class="logo">H</div><div><h1>Hakikat Dergisi</h1><p>Kapak, sayı, konu, makale ve sesli okuma.</p></div></div><div class="tools"><div class="row"><input id="q" class="inp" placeholder="Sayı, tarih, konu ara..."><button id="fetchBtn" class="btn">Çek</button></div><select id="mode" class="sel"><option value="jina">Jina Reader proxy - CORS güvenli</option></select><div class="row"><button id="clearBtn" class="btn b">Veriyi Yenile</button><button id="saveBtn" class="btn b">JSON Kaydet</button><label class="btn b" style="text-align:center">JSON Yükle<input id="fileIn" type="file" accept=".json" hidden></label></div></div><p class="note" id="status">Liste önce IndexedDB’den açılır. Yoksa otomatik temel liste oluşturulur; çekilen sayılar IndexedDB’ye kaydedilir.</p><div id="issueList" class="list"></div></aside><main class="mid"><div id="issueView" class="box"><div class="empty"><div><h2>Soldan bir sayı seçin.</h2><p>Önce kayıtlı veri gösterilir; sayı ilk kez açılıyorsa internetten çekilir.</p></div></div></div></main><section class="read"><div class="top"><div class="rt"><h2 id="readerTitle">Okuma ekranı</h2><p id="readerSub">Makale seçiniz.</p></div><div class="ctrl"><button id="listBtn" class="btn b">📚 Listeye Dön</button><button id="prevBtn" class="btn b">◀ Geri</button><button id="nextBtn" class="btn b">İleri ▶</button><button id="playBtn" class="btn g">Sesli Oku</button><button id="stopBtn" class="btn r">Durdur</button><select id="voiceSel" class="inp voice"></select><select id="rateSel" class="inp" style="width:85px"><option>0.8</option><option selected>1</option><option>1.15</option><option>1.3</option></select><div class="prog"><div id="bar" class="bar"></div></div><span id="count">0/0</span></div></div><div id="content" class="content"><div class="empty"><div><h2>Okuma için sayı seçin.</h2></div></div></div></section></div><div id="toast" class="toast" style="display:none"></div>
 <script>
+'use strict';
 const BASE='https://www.hakikat.com';
-const state={issues:[],issue:null,articles:[],article:null,sentences:[],idx:0,playing:false,voices:[]};
-const DB_NAME='hakikat_reader_db_v7';
-const STORE='kv';
-function idbOpen(){return new Promise((resolve,reject)=>{const req=indexedDB.open(DB_NAME,1);req.onupgradeneeded=()=>req.result.createObjectStore(STORE);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});}
-async function idbSet(key,val){try{const db=await idbOpen();await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,'readwrite');tx.objectStore(STORE).put(val,key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});db.close();}catch(e){try{localStorage.setItem(key,JSON.stringify(val))}catch(_){}}}
-async function idbGet(key){try{const db=await idbOpen();const val=await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,'readonly');const req=tx.objectStore(STORE).get(key);req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error);});db.close();return val;}catch(e){try{return JSON.parse(localStorage.getItem(key)||'null')}catch(_){return null}}}
-async function idbDel(key){try{const db=await idbOpen();await new Promise((resolve,reject)=>{const tx=db.transaction(STORE,'readwrite');tx.objectStore(STORE).delete(key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error);});db.close();}catch(e){try{localStorage.removeItem(key)}catch(_){}}}
-
+const DB='hakikat_dergi_okuyucu_v8', STORE='kv';
 const $=id=>document.getElementById(id);
-function toast(t){$('toast').textContent=t;$('toast').style.display='block';clearTimeout(window._tt);window._tt=setTimeout(()=>$('toast').style.display='none',3500)}
-function urlFor(u){return 'https://r.jina.ai/http://'+u.replace(/^https?:\/\//,'')}
-async function getText(u){let r=await fetch(urlFor(u),{cache:'no-store'});if(!r.ok)throw new Error('Bağlantı hatası: '+r.status);return await r.text()}
-async function getTextWithMode(u,mode){
-  let old=$('mode').value;$('mode').value=mode;
-  try{return await getText(u)}finally{$('mode').value=old}
-}
-
-async function findCoverFromHtml(issue){
-  const target=issue.url;
-  const proxies=[
-    u=>'https://api.allorigins.win/raw?url='+encodeURIComponent(u),
-    u=>'https://api.codetabs.com/v1/proxy/?quest='+encodeURIComponent(u),
-    u=>'https://corsproxy.io/?'+encodeURIComponent(u)
-  ];
-  for(const make of proxies){
-    try{
-      const ctrl=new AbortController();
-      const timer=setTimeout(()=>ctrl.abort(),6500);
-      const r=await fetch(make(target),{cache:'no-store',signal:ctrl.signal});
-      clearTimeout(timer);
-      if(!r.ok) continue;
-      const html=await r.text();
-      const imgs=[];
-      const re=/<img[^>]+(?:src|data-src)=['"]([^'"]+)['"][^>]*>/gi;
-      let m;
-      while((m=re.exec(html))){
-        const tag=m[0], src=absUrl(m[1]);
-        const score=(/kapak/i.test(tag)?10:0)+(/hakikat-dergisi/i.test(src+tag)?8:0)+(String(issue.no) && (src+tag).includes(String(issue.no))?5:0)+(/resim-jpg/i.test(src)?2:0);
-        imgs.push({src,score});
-      }
-      imgs.sort((a,b)=>b.score-a.score);
-      const best=imgs.find(x=>x.score>=10)||imgs.find(x=>/kapak/i.test(x.src))||imgs[0];
-      if(best&&best.src) return best.src;
-    }catch(e){}
-  }
-  return '';
-}
-
+let state={issues:[],issue:null,sentences:[],idx:0,playing:false,voices:[]};
+function toast(t){$('toast').textContent=t;$('toast').style.display='block';$('status').textContent=t;clearTimeout(window.__to);window.__to=setTimeout(()=>$('toast').style.display='none',3500)}
+function openDB(){return new Promise((res,rej)=>{let r=indexedDB.open(DB,1);r.onupgradeneeded=e=>e.target.result.createObjectStore(STORE);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)})}
+async function idbGet(k){let db=await openDB();return new Promise(r=>{let x=db.transaction(STORE).objectStore(STORE).get(k);x.onsuccess=()=>r(x.result);x.onerror=()=>r(null)})}
+async function idbSet(k,v){let db=await openDB();return new Promise(r=>{let x=db.transaction(STORE,'readwrite').objectStore(STORE).put(v,k);x.onsuccess=()=>r(true);x.onerror=()=>r(false)})}
+async function idbClear(){let db=await openDB();return new Promise(r=>{let x=db.transaction(STORE,'readwrite').objectStore(STORE).clear();x.onsuccess=()=>r(true);x.onerror=()=>r(false)})}
 function clean(s){return (s||'').replace(/\s+/g,' ').replace(/\[([^\]]+)\]\([^\)]+\)/g,'$1').replace(/[*_#>`]/g,'').trim()}
+function abs(u){if(!u)return'';u=u.replace(/&amp;/g,'&').trim();if(u.startsWith('//'))return'https:'+u;if(u.startsWith('/'))return BASE+u;if(u.startsWith('http://'))return u.replace('http://','https://');return u}
+function slug(n){return BASE+'/hakikat-dergisi/'+n+'-sayi'}
+function proxy(u){return 'https://r.jina.ai/http://r.jina.ai/http://'+u.replace(/^https?:\/\//,'')}
+async function getText(u){let r=await fetch(proxy(u),{cache:'no-store'});if(!r.ok)throw new Error('Bağlantı hatası '+r.status);return await r.text()}
+function monthName(i){return ['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'][i]}
+function seededIssues(){let arr=[];let startNo=393, y=2026, m=5;for(let no=startNo;no>=1;no--){let date=monthName(m)+' '+y;arr.push({no,date,title:`${no}.SAYI, ${date}`,url:slug(no),topics:[],cover:'',seed:true});m--;if(m<0){m=11;y--}}return arr}
+function parseIssueList(txt){let re=/(\d{1,3})\.SAYI,\s*([A-Za-zÇĞİÖŞÜçğıöşü]+\s+\d{4})/g,arr=[],seen=new Set(),m;while((m=re.exec(txt))){let no=+m[1];if(no&&!seen.has(no)){seen.add(no);arr.push({no,date:m[2],title:`${no}.SAYI, ${m[2]}`,url:slug(no),topics:[],cover:''})}}return arr.sort((a,b)=>b.no-a.no)}
+function extractCover(md,issue){let c=[];for(const m of md.matchAll(/!\[[^\]]*\]\((https?:\/\/[^)]+?\.(?:jpg|jpeg|png|webp)(?:\?[^)]*)?)\)/gi))c.push(m[1]);for(const m of md.matchAll(/https?:\/\/[^\s"'()<>]+\.(?:jpg|jpeg|png|webp)(?:\?[^\s"'()<>]*)?/gi))c.push(m[0]);c=[...new Set(c.map(abs))];let no=String(issue.no);return c.find(x=>/kapak/i.test(x)&&x.includes(no))||c.find(x=>/hakikat-dergisi/i.test(x)&&x.includes(no))||c.find(x=>/kapak/i.test(x))||c.find(x=>x.includes(no))||''}
+function strip(lines){const bad=/^(Title:|URL Source:|Markdown Content:|Hakikat Yayıncılık|ÖMER ÖNGÜT|HAKİKAT YAYINCILIK|HAKİKAT DERGİSİ|HAKİKAT MEDYA|HAKİKAT KIRTASİYE|HAKİKAT TAKVİMLERİ|Arama Yap|HAKKIMIZDA|DUYURULAR|YABANCI DİLDEKİ|KÜNYE|TEMSİLCİLİKLERİMİZ|İLETİŞİM|Ana Sayfa|Büyüt|Önceki \d+\.SAYI|Sonraki \d+\.SAYI|SAYFAYA DEVAM|Yazar Seçiniz|Sayı Seçiniz|Tüm Sayılar)$/i;return lines.map(clean).filter(l=>l&&!bad.test(l)&&!/^(Image:|\* \* \*)/i.test(l))}
+function parseIssuePage(md,issue){let lines=strip(md.split(/\n+/).map(x=>x.trim()).filter(Boolean));let idx=lines.findIndex(l=>new RegExp('^'+issue.no+'\\.SAYI','i').test(l));let bes=lines.findIndex(l=>/Bismillahirrahmanirrahim/i.test(l));let start=0;if(idx>=0)start=idx+1;if(bes>=0)start=Math.min(start||bes,bes);let body=lines.slice(start).filter(l=>!/^https?:\/\//i.test(l)&&!/^Hakikat \d+\. Sayı/i.test(l)&&!/^Başyazı ve Makaleler$/i.test(l)&&!/^Başyazı$/i.test(l)&&!/^İsmail Yavuz$/i.test(l)&&!/^Başyazıyı Oku$/i.test(l));let full=body.join('\n').replace(/\n{3,}/g,'\n\n').trim()||lines.join('\n');let title=`${issue.no}.SAYI, ${issue.date}`;let cover=extractCover(md,issue)||issue.cover||'';return {...issue,title,cover,topics:[title],articles:[{title,text:full,kind:'full'}],seed:false,rawAt:Date.now()}}
 function splitSentences(txt){return clean(txt).replace(/([.!?…])\s+(?=[A-ZÇĞİÖŞÜÂÎÛ0-9“\"])/g,'$1|').split('|').map(x=>x.trim()).filter(x=>x.length>12)}
-function slugIssue(n){return BASE+'/hakikat-dergisi/'+n+'-sayi'}
-function monthYear(t){let m=(t.match(/,\s*([^\n]+?\s+\d{4})/)||[])[1]||'';return clean(m)}
-function parseIssueList(txt){let re=/(\d{1,3})\.SAYI,\s*([A-Za-zÇĞİÖŞÜçğıöşü]+\s+\d{4})/g,arr=[],seen=new Set(),m;while((m=re.exec(txt))){let no=+m[1];if(no>=1&&!seen.has(no)){seen.add(no);arr.push({no,date:m[2],title:`${no}.SAYI, ${m[2]}`,url:slugIssue(no),topics:[],cover:''});}}return arr.sort((a,b)=>b.no-a.no)}
-function absUrl(u){if(!u)return '';u=u.replace(/&amp;/g,'&').trim();if(u.startsWith('//'))return 'https:'+u;if(u.startsWith('/'))return BASE+u;if(u.startsWith('http://'))return u.replace('http://','https://');return u}
-function extractCover(md,issue){
-  let candidates=[];
-  // Markdown image: ![kapak](https://...jpg?...)
-  for(const m of md.matchAll(/!\[[^\]]*\]\((https?:\/\/[^)]+?\.(?:jpg|jpeg|png|webp)(?:\?[^)]*)?)\)/gi)) candidates.push(m[1]);
-  // Plain image URLs that Jina sometimes leaves in the text
-  for(const m of md.matchAll(/https?:\/\/[^\s"'()<>]+\.(?:jpg|jpeg|png|webp)(?:\?[^\s"'()<>]*)?/gi)) candidates.push(m[0]);
-  candidates=[...new Set(candidates.map(absUrl).filter(Boolean))];
-  const no=String(issue.no);
-  return candidates.find(x=>x.toLowerCase().includes('kapak') && x.includes(no))
-    || candidates.find(x=>x.toLowerCase().includes('hakikat-dergisi') && x.includes(no))
-    || candidates.find(x=>x.toLowerCase().includes('kapak'))
-    || candidates.find(x=>x.includes(no))
-    || '';
-}
-function isReferenceTitle(l){return /^\(?[A-Za-zÇĞİÖŞÜçğıöşüÂÎÛâîû'’\-\s]+:\s*\d+[\-–]?\d*\)?$/.test(l.trim())}
-function stripSiteNoise(lines){
-  const bad=/^(Title:|URL Source:|Markdown Content:|Hakikat Yayıncılık|ÖMER ÖNGÜT|HAKİKAT YAYINCILIK|HAKİKAT DERGİSİ|HAKİKAT MEDYA|HAKİKAT KIRTASİYE|HAKİKAT TAKVİMLERİ|Arama Yap|HAKKIMIZDA|DUYURULAR|YABANCI DİLDEKİ|KÜNYE|TEMSİLCİLİKLERİMİZ|KIRTASİYE BAYİLERİMİZ|İLETİŞİM|Ana Sayfa|Büyüt|Önceki \d+\.SAYI|Sonraki \d+\.SAYI|SAYFAYA DEVAM|Yazar Seçiniz|Sayı Seçiniz|Tüm Sayılar)$/i;
-  return lines.map(clean).filter(l=>l && !bad.test(l) && !/^Image:/i.test(l) && !/^\* \* \*$/.test(l));
-}
-function parseIssuePage(md,issue){
-  let rawLines=md.split(/\n+/).map(x=>x.trim()).filter(Boolean);
-  let lines=stripSiteNoise(rawLines);
-  let title=`${issue.no}.SAYI, ${issue.date}`;
-  let cover=extractCover(md,issue)||issue.cover||'';
-
-  // Orta bölüm metin parçalamaz: her sayı tek ana metin olarak tutulur.
-  let contentStart=0;
-  let ownTitleIndex=lines.findIndex(l=>new RegExp('^'+issue.no+'\\.SAYI','i').test(l));
-  let besmeleIndex=lines.findIndex(l=>/Bismillahirrahmanirrahim/i.test(l));
-  if(ownTitleIndex>=0) contentStart=ownTitleIndex+1;
-  if(besmeleIndex>=0) contentStart=Math.min(contentStart||besmeleIndex, besmeleIndex);
-
-  let bodyLines=lines.slice(contentStart).filter(l=>{
-    if(/^Hakikat \d+\. Sayı/i.test(l)) return false;
-    if(/^Başyazı ve Makaleler$/i.test(l)) return false;
-    if(/^Başyazıyı Oku$/i.test(l)) return false;
-    if(/^Başyazı$/i.test(l)) return false;
-    if(/^İsmail Yavuz$/i.test(l)) return false;
-    if(/^https?:\/\//i.test(l)) return false;
-    return true;
-  });
-  let fullText=bodyLines.join('\n').replace(/\n{3,}/g,'\n\n').trim();
-  if(!fullText) fullText=lines.join('\n');
-  let mainTitle=`${issue.no}.SAYI, ${issue.date}`;
-  let articles=[{title:mainTitle,text:fullText,kind:'full'}];
-  return {...issue,title:mainTitle,cover,topics:[mainTitle],articles,raw:md};
-}
-function renderIssues(){let q=$('q').value.toLowerCase().trim();let list=state.issues.filter(x=>!q||(`${x.no} ${x.date} ${x.title} ${(x.topics||[]).join(' ')}`).toLowerCase().includes(q));$('issueList').innerHTML=list.map(x=>`<div class="issue ${state.issue&&state.issue.no===x.no?'active':''}" onclick="loadIssue(${x.no})"><div class="coverMini">${x.cover?`<img src="${x.cover}" style="width:100%;height:100%;object-fit:cover;border-radius:9px">`:x.no}</div><div><b>${x.title}</b><small>${x.date}</small><div class="chips">${(x.topics||[]).slice(0,3).map(t=>`<span class="chip">${t}</span>`).join('')}</div></div></div>`).join('')||'<p class="hint">Sonuç yok.</p>'}
-function renderIssue(){
-  let x=state.issue;if(!x)return;
-  const coverHtml=x.cover
-    ? `<img src="${x.cover}" onerror="this.parentElement.innerHTML='<div class=\'fallback\'>${x.no}<br><small>${x.date}</small><br><small>Kapak yüklenemedi</small></div>'">`
-    : `<div class="fallback">${x.no}<br><small>${x.date}</small><br><small>Kapak aranıyor / bulunamadı</small></div>`;
-  const readCount=splitSentences((x.articles&&x.articles[0]?x.articles[0].text:'')).length;
-  $('issueView').innerHTML=`
-    <div class="bigCover">${coverHtml}</div>
-    <div class="meta">
-      <div class="stat"><small>Sayı</small><b>${x.no}</b></div>
-      <div class="stat"><small>Tarih</small><b>${x.date}</b></div>
-      <div class="stat"><small>Okuma</small><b>${readCount}</b></div>
-    </div>
-    <button class="btn play" style="width:100%;margin:4px 0 12px" onclick="selectArticle(0)">Ana metni oku ▶</button>
-    <h3 class="sectionTitle">Konular</h3>
-    <div class="article active" onclick="selectArticle(0)">
-      <b>${(x.articles&&x.articles[0]?x.articles[0].title:x.title)||'Ana metin'}</b>
-      <small>Bu derginin metni sağdaki okuma ekranında tek akış halinde açılır. Orta bölümde metin parçalanmaz.</small>
-    </div>`;
-}
-function renderContent(){let s=state.sentences;$('count').textContent=s.length?`${state.idx+1}/${s.length}`:'0/0';$('bar').style.width=s.length?((state.idx+1)/s.length*100)+'%':'0';if(!s.length){$('content').innerHTML='<div class="empty"><div><h2>Makale seçiniz.</h2></div></div>';return}$('content').innerHTML=s.map((x,i)=>`<p id="s${i}" class="sentence ${i<state.idx?'done':i===state.idx?'active':'next'}">${x}</p>`).join('');let el=$('s'+state.idx);if(el)el.scrollIntoView({block:'center',behavior:'smooth'});}
-
-async function loadAll(){
-  try{
-    toast('Sayı listesi kontrol ediliyor...');
-    const cached=await idbGet('issues');
-    if(cached&&cached.issues&&cached.issues.length){
-      state.issues=cached.issues;
-      renderIssues();
-      toast('IndexedDB kayıtlı liste açıldı. Yeni çekim yapılmadı.');
-      return;
-    }
-    toast('Sayı listesi çekiliyor...');
-    let txt=await getText(BASE+'/hakikat-dergisi');
-    state.issues=parseIssueList(txt);
-    if(!state.issues.length)throw new Error('Sayı listesi bulunamadı.');
-    await saveLocal();
-    renderIssues();
-    toast(state.issues.length+' sayı listelendi ve IndexedDB’ye kaydedildi.');
-  }catch(e){toast('Hata: '+e.message);await loadLocal();}
-}
-async function forceFetchAll(){await idbDel('issues'); await loadAll();}
-async function loadIssue(no){
-  let issue=state.issues.find(x=>x.no===no);if(!issue)return;
-  stop();state.issue=issue;state.article=null;state.sentences=[];state.idx=0;
-  renderIssues();renderIssue();
-  $('readerTitle').textContent=`${issue.no}.SAYI, ${issue.date}`;
-  $('readerSub').textContent='İçerik hazırlanıyor...';
-  $('content').innerHTML='<div class="empty"><div><h2>İçerik hazırlanıyor...</h2><p>Önce IndexedDB kontrol ediliyor.</p></div></div>';
-  try{
-    const cached=await idbGet('issue_'+no);
-    if(cached&&cached.articles&&cached.articles.length){
-      Object.assign(issue,cached);state.issue=issue;
-      renderIssues();renderIssue();selectArticle(0);
-      toast(no+'. sayı IndexedDB’den açıldı. Tekrar çekilmedi.');
-      return;
-    }
-    toast(no+'. sayı ilk kez çekiliyor...');
-    let md=await getText(issue.url);
-    let full=parseIssuePage(md,issue);
-    if(!full.cover){
-      toast('Kapak ayrıca aranıyor...');
-      full.cover=await findCoverFromHtml(issue);
-    }
-    Object.assign(issue,full);state.issue=issue;
-    await idbSet('issue_'+no, issue);
-    await saveLocal();
-    renderIssues();renderIssue();selectArticle(0);
-    toast('İçerik ve varsa kapak IndexedDB’ye kaydedildi.');
-  }catch(e){
-    state.article=null;state.sentences=[];renderIssue();
-    $('readerTitle').textContent=`${issue.no}.SAYI, ${issue.date}`;
-    $('readerSub').textContent='Çekilemedi';
-    $('content').innerHTML='<div class="empty"><div><h2>Bu sayı çekilemedi</h2><p>Proxy zaman aşımına uğradı. Daha önce IndexedDB’de kayıt yoksa internetten çekilemez.</p></div></div>';
-    toast('Sayı çekilemedi: '+e.message);
-  }
-}
-function selectArticle(i){state.article=i;let a=state.issue.articles[i];state.sentences=splitSentences(a.text);state.idx=0;$('readerTitle').textContent=a.title;$('readerSub').textContent=state.issue.title+' • '+state.sentences.length+' cümle';renderIssue();renderContent();showReaderScreen();}
-function next(){if(state.idx<state.sentences.length-1){state.idx++;renderContent();}}
-function prev(){if(state.idx>0){state.idx--;renderContent();}}
-
-function showListScreen(){stop();$('app').classList.add('catalog');$('app').classList.remove('reading');window.scrollTo({top:0,left:0,behavior:'smooth'});let list=$('issueList');if(list)list.scrollIntoView({block:'start',behavior:'smooth'});}
-function showReaderScreen(){$('app').classList.remove('catalog');$('app').classList.add('reading');window.scrollTo({top:0,left:0,behavior:'smooth'});}
-function speakCurrent(){if(!state.sentences.length)return;window.speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(state.sentences[state.idx]);u.lang='tr-TR';u.rate=parseFloat($('rateSel').value)||1;let v=state.voices.find(x=>x.name===$('voiceSel').value);if(v)u.voice=v;u.onend=()=>{if(state.playing&&state.idx<state.sentences.length-1){next();setTimeout(speakCurrent,120)}else state.playing=false};window.speechSynthesis.speak(u)}
-function play(){state.playing=true;speakCurrent()}function stop(){state.playing=false;window.speechSynthesis.cancel()}
+function renderIssues(){let q=$('q').value.toLowerCase().trim();let arr=state.issues.filter(x=>!q||(`${x.no} ${x.date} ${x.title} ${(x.topics||[]).join(' ')}`).toLowerCase().includes(q));$('issueList').innerHTML=arr.map(x=>`<div class="issue ${state.issue&&state.issue.no===x.no?'active':''}" data-no="${x.no}"><div class="mini">${x.cover?`<img src="${x.cover}">`:x.no}</div><div><b>${x.title}</b><small>${x.date}${x.seed?' • temel liste':''}</small><div class="chips">${(x.topics||[]).slice(0,3).map(t=>`<span class="chip">${t}</span>`).join('')}</div></div></div>`).join('')||'<p class="note">Sonuç yok.</p>';document.querySelectorAll('.issue').forEach(el=>el.onclick=()=>loadIssue(+el.dataset.no))}
+function renderIssue(){let x=state.issue;if(!x)return;let cnt=splitSentences(x.articles&&x.articles[0]?x.articles[0].text:'').length;$('issueView').innerHTML=`<div class="cover">${x.cover?`<img src="${x.cover}" onerror="this.parentElement.innerHTML='<div class=fallback>${x.no}<br><small>${x.date}</small><br><small>Kapak yüklenemedi</small></div>'">`:`<div class="fallback">${x.no}<br><small>${x.date}</small><br><small>Kapak bulunamadı</small></div>`}</div><div class="meta"><div class="stat"><small>Sayı</small><b>${x.no}</b></div><div class="stat"><small>Tarih</small><b>${x.date}</b></div><div class="stat"><small>Okuma</small><b>${cnt}</b></div></div><button id="readMain" class="btn g" style="width:100%;margin:4px 0 12px">Ana metni oku ▶</button><h3>Konular</h3><div class="topic"><b>${x.title}</b><br><small>Bu bölüm sadece konu/künye gösterir. Ana metin sağdaki okuma ekranında tek akış halindedir.</small></div>`;$('readMain').onclick=()=>selectArticle(0)}
+function renderContent(){let s=state.sentences;$('count').textContent=s.length?`${state.idx+1}/${s.length}`:'0/0';$('bar').style.width=s.length?((state.idx+1)/s.length*100)+'%':'0';if(!s.length){$('content').innerHTML='<div class="empty"><div><h2>Okuma için sayı seçin.</h2></div></div>';return}$('content').innerHTML=s.map((x,i)=>`<p id="s${i}" class="s ${i<state.idx?'done':i===state.idx?'active':''}">${x}</p>`).join('');let el=$('s'+state.idx);if(el)el.scrollIntoView({block:'center',behavior:'smooth'})}
+async function saveIssues(){await idbSet('issues',{issues:state.issues,at:Date.now(),version:8})}
+async function loadLocal(){let d=await idbGet('issues');if(d&&d.issues&&d.issues.length){state.issues=d.issues;renderIssues();toast('IndexedDB kayıtlı liste açıldı.');return true}return false}
+async function loadAll(force=false){if(!force&&await loadLocal())return;state.issues=seededIssues();renderIssues();await saveIssues();toast('Temel sayı listesi oluşturuldu. İstersen internetten güncelleme deneniyor...');try{let txt=await getText(BASE+'/hakikat-dergisi');let online=parseIssueList(txt);if(online.length){let map=new Map(state.issues.map(x=>[x.no,x]));online.forEach(x=>map.set(x.no,{...map.get(x.no),...x,seed:false}));state.issues=[...map.values()].sort((a,b)=>b.no-a.no);await saveIssues();renderIssues();toast(online.length+' sayı internetten doğrulandı ve IndexedDB’ye kaydedildi.')}}catch(e){toast('Liste internetten çekilemedi; temel liste kullanılacak. '+e.message)}}
+async function loadIssue(no){let issue=state.issues.find(x=>x.no===no);if(!issue)return;stop();state.issue=issue;state.sentences=[];state.idx=0;renderIssues();renderIssue();$('readerTitle').textContent=issue.title;$('readerSub').textContent='İçerik hazırlanıyor...';$('content').innerHTML='<div class="empty"><div><h2>İçerik hazırlanıyor...</h2><p>Önce IndexedDB kontrol ediliyor.</p></div></div>';try{let cached=await idbGet('issue_'+no);if(cached&&cached.articles&&cached.articles.length){Object.assign(issue,cached);state.issue=issue;renderIssues();renderIssue();selectArticle(0);toast(no+'. sayı IndexedDB’den açıldı. Tekrar çekilmedi.');return}toast(no+'. sayı ilk kez internetten çekiliyor...');let md=await getText(issue.url);let full=parseIssuePage(md,issue);Object.assign(issue,full);state.issue=issue;await idbSet('issue_'+no,issue);await saveIssues();renderIssues();renderIssue();selectArticle(0);toast(no+'. sayı IndexedDB’ye kaydedildi. Sonraki açılışta tekrar çekilmeyecek.')}catch(e){renderIssue();$('content').innerHTML='<div class="empty"><div><h2>Bu sayı çekilemedi.</h2><p>Bağlantı/proxy zaman aşımı. Daha önce IndexedDB’ye kaydedilmemiş.</p></div></div>';toast('Sayı çekilemedi: '+e.message)}}
+function selectArticle(i){let a=state.issue&&state.issue.articles&&state.issue.articles[i];if(!a)return;state.sentences=splitSentences(a.text);state.idx=0;$('readerTitle').textContent=a.title;$('readerSub').textContent=state.issue.title+' • '+state.sentences.length+' cümle';renderIssue();renderContent();showReader()}
+function next(){if(state.idx<state.sentences.length-1){state.idx++;renderContent()}}function prev(){if(state.idx>0){state.idx--;renderContent()}}
+function showCatalog(){stop();$('app').classList.add('catalog');$('app').classList.remove('reading');renderIssues();window.scrollTo(0,0)}function showReader(){$('app').classList.remove('catalog');$('app').classList.add('reading');window.scrollTo(0,0)}
 function loadVoices(){state.voices=speechSynthesis.getVoices().filter(v=>/tr|turkish/i.test(v.lang+' '+v.name));if(!state.voices.length)state.voices=speechSynthesis.getVoices();$('voiceSel').innerHTML=state.voices.map(v=>`<option>${v.name}</option>`).join('')}
-
-async function saveLocal(){await idbSet('issues',{version:7,issues:state.issues,at:Date.now()});}
-async function loadLocal(){
-  const d=await idbGet('issues');
-  if(d&&d.issues&&d.issues.length){state.issues=d.issues;renderIssues();toast('IndexedDB kayıtlı veri açıldı.');return true;}
-  try{let keys=['hakikat_reader_data_v6','hakikat_reader_data_v5','hakikat_reader_data_v4','hakikat_reader_data_v3','hakikat_reader_data_v2','hakikat_reader_data'];for(let k of keys){let old=JSON.parse(localStorage.getItem(k)||'{}');if(old.issues&&old.issues.length){state.issues=old.issues;await saveLocal();renderIssues();toast('Eski kayıt IndexedDB’ye aktarıldı.');return true}}}catch(e){}
-  return false;
-}
-function downloadJson(){let blob=new Blob([JSON.stringify({issues:state.issues},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hakikat_dergisi_data.json';a.click();URL.revokeObjectURL(a.href)}
-$('fetchBtn').onclick=loadAll;$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('stopBtn').onclick=stop;$('saveBtn').onclick=downloadJson;$('listBtn').onclick=showListScreen;$('fileIn').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);state.issues=d.issues||[];saveLocal().then(()=>{renderIssues();toast('JSON yüklendi ve IndexedDB’ye kaydedildi.')})}catch(err){toast('JSON okunamadı.')}};r.readAsText(f)};speechSynthesis.onvoiceschanged=loadVoices;loadVoices();(async()=>{if(!await loadLocal()){setTimeout(loadAll,300)}})();
-window.loadIssue=loadIssue;window.selectArticle=selectArticle;window.showListScreen=showListScreen;
-</script>
-</body>
-</html>
+function speak(){if(!state.sentences.length)return;speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(state.sentences[state.idx]);u.lang='tr-TR';u.rate=parseFloat($('rateSel').value)||1;let v=state.voices.find(x=>x.name===$('voiceSel').value);if(v)u.voice=v;u.onend=()=>{if(state.playing&&state.idx<state.sentences.length-1){next();setTimeout(speak,120)}else state.playing=false};speechSynthesis.speak(u)}function play(){state.playing=true;speak()}function stop(){state.playing=false;speechSynthesis.cancel()}
+function downloadJson(){let blob=new Blob([JSON.stringify({issues:state.issues},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hakikat_dergisi_data_v8.json';a.click();URL.revokeObjectURL(a.href)}
+function bind(){$('fetchBtn').onclick=()=>loadAll(true);$('clearBtn').onclick=async()=>{await idbClear();state.issues=[];state.issue=null;renderContent();await loadAll(true)};$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('stopBtn').onclick=stop;$('listBtn').onclick=showCatalog;$('saveBtn').onclick=downloadJson;$('fileIn').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=async()=>{try{let d=JSON.parse(r.result);state.issues=d.issues||[];await saveIssues();renderIssues();toast('JSON IndexedDB’ye yüklendi.')}catch(err){toast('JSON okunamadı.')}};r.readAsText(f)};speechSynthesis.onvoiceschanged=loadVoices;loadVoices();loadAll(false)}
+document.addEventListener('DOMContentLoaded',bind);
+</script></body></html>
