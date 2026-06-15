@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hakikat Dijital Okuyucu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; transition: background-color 0.2s, color 0.2s; }
+        .reader-text { font-family: 'Merriweather', serif; line-height: 2.6; text-align: justify; }
+        
+        .theme-light { background-color: #f7f1e3; color: #3a2e1d; }
+        .theme-light .sidebar { background-color: #efdfbb; border-color: #decfa6; }
+        .theme-light .card-item { background-color: #fcf8ee; border-color: #decfa6; }
+        .theme-light .card-item:hover { background-color: #f5edd6; }
+        .theme-light .card-active { background-color: #decfa6; border-left-color: #92400e; }
+        .theme-light .card-title { color: #92400e; }
+        .theme-light .card-desc { color: #4a3c2c; }
+        .theme-light .control-bar { background-color: #ebdcb9; border-color: #decfa6; }
+        .theme-light .sentence { padding: 3px 6px; border-radius: 4px; transition: all 0.15s ease; cursor: pointer; display: inline; }
+        .theme-light .sentence-active { background-color: #4a3728; color: #f7f1e3; }
+        .theme-light .input-box { background-color: #fcf8ee; color: #3a2e1d; border-color: #decfa6; }
+
+        .theme-dark { background-color: #121212; color: #e5e5e5; }
+        .theme-dark .sidebar { background-color: #1e1e1e; border-color: #2e2e2e; }
+        .theme-dark .card-item { background-color: #252525; border-color: #2e2e2e; }
+        .theme-dark .card-item:hover { background-color: #2d2d2d; }
+        .theme-dark .card-active { background-color: #333333; border-left-color: #f59e0b; }
+        .theme-dark .card-title { color: #f59e0b; }
+        .theme-dark .card-desc { color: #bcbcbc; }
+        .theme-dark .control-bar { background-color: #1e1e1e; border-color: #2e2e2e; }
+        .theme-dark .sentence { padding: 3px 6px; border-radius: 4px; transition: all 0.15s ease; cursor: pointer; display: inline; }
+        .theme-dark .sentence-active { background-color: #f59e0b; color: #121212; }
+        .theme-dark .input-box { background-color: #252525; color: #e5e5e5; border-color: #333333; }
+
+        .scroller { -webkit-overflow-scrolling: touch; }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    </style>
+</head>
+<body class="theme-light h-screen w-screen flex flex-col md:flex-row overflow-hidden">
+
+    <aside class="sidebar w-full md:w-80 border-b md:border-b-0 md:border-r flex flex-col h-[40vh] md:h-full flex-shrink-0 z-20 transition-colors duration-300">
+        <div class="p-4 border-b border-inherit flex justify-between items-center bg-black/5">
+            <h1 class="font-bold text-sm tracking-wide flex items-center gap-2">
+                <i class="fa-solid fa-book-open text-amber-700"></i> Hakikat Arşivi
+            </h1>
+            <button id="themeToggle" class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/10 flex items-center justify-center transition">
+                <i id="themeIcon" class="fa-solid fa-moon text-base"></i>
+            </button>
+        </div>
+        <div class="p-3 border-b border-inherit bg-black/5">
+            <input type="text" id="searchInput" placeholder="Sayı veya başyazı ara..." class="input-box w-full px-3 py-2 text-xs rounded-xl border focus:outline-none">
+        </div>
+        <div id="dergiListesi" class="flex-1 overflow-y-auto p-2 space-y-2 scroller"></div>
+    </aside>
+
+    <main class="flex-1 flex flex-col h-[60vh] md:h-full overflow-hidden transition-colors duration-300">
+        <section class="control-bar p-3 border-b flex items-center justify-between gap-4 flex-shrink-0 shadow-sm">
+            <div class="flex items-center gap-2 max-w-[45%]"><h2 id="playerBaslik" class="font-bold text-xs md:text-sm truncate">Dergi Seçiniz</h2></div>
+            <div class="flex items-center gap-3">
+                <button id="btnGeri" class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center"><i class="fa-solid fa-backward-step text-xs"></i></button>
+                <button id="btnOynat" class="w-10 h-10 bg-amber-800 text-white rounded-full flex items-center justify-center shadow-md active:scale-95 transition"><i class="fa-solid fa-play text-base ml-0.5" id="playIcon"></i></button>
+                <button id="btnIleri" class="w-8 h-8 rounded-full bg-black/5 dark:bg-white/5 flex items-center justify-center"><i class="fa-solid fa-forward-step text-xs"></i></button>
+            </div>
+            <div>
+                <select id="speedSelect" class="bg-black/5 dark:bg-white/10 text-xs rounded-lg p-1.5 focus:outline-none">
+                    <option value="0.8">0.8x</option>
+                    <option value="1.0" selected>1.0x</option>
+                    <option value="1.2">1.2x</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="contentArea" class="flex-1 overflow-y-auto p-4 md:p-10 flex flex-col items-center scroller">
+            <div id="readerWrapper" class="max-w-2xl w-full hidden">
+                <div class="flex justify-center mb-4">
+                    <img id="anaKapak" src="" class="w-24 h-32 object-cover rounded shadow-md border bg-white cursor-zoom-in transition duration-200">
+                </div>
+                <h1 id="anaKonu" class="text-base md:text-xl font-bold text-center mb-6 border-b pb-4 border-current/10 tracking-wide"></h1>
+                <article id="metinAlani" class="reader-text text-sm md:text-base pb-40 select-none"></article>
+            </div>
+            <div id="emptyState" class="flex-1 flex flex-col items-center justify-center opacity-45 text-center my-auto">
+                <i class="fa-solid fa-book-open-reader text-4xl mb-2"></i>
+                <p class="text-xs font-semibold">Okumak istediğiniz sayıyı soldaki listeden seçin.</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageModal" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center hidden opacity-0 transition-opacity duration-200 cursor-zoom-out">
+        <div class="relative p-2 max-w-[95vw] max-h-[95vh]"><img id="modalImage" src="" class="max-w-full max-h-[88vh] rounded-lg shadow-2xl object-contain"></div>
+    </div>
+
+    <script src="veri.js"></script>
+
+    <script>
+        let aktifDergi = null; let cumleler = []; let aktifCumleIndex = -1;
+        let synth = window.speechSynthesis; let utterance = null; let isPlaying = false;
+        let isDarkMode = false;
+
+        const imageModal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+
+        function init() {
+            // Eğer veri.js doğru yüklenmediyse kullanıcıyı uyar
+            if(typeof dergiVerileri === 'undefined') { 
+                alert("Hata: 'veri.js' dosyası bulunamadı veya içi boş! Lütfen kazici.py botunu çalıştırıp veri.js dosyasını oluşturduğunuzdan emin olun.");
+                return; 
+            }
+            
+            const savedTheme = localStorage.getItem('hakikat_theme') || 'light';
+            isDarkMode = savedTheme === 'dark';
+            applyTheme();
+
+            renderList(dergiVerileri);
+            
+            document.getElementById('searchInput').addEventListener('input', filtrele);
+            document.getElementById('btnOynat').addEventListener('click', togglePlay);
+            document.getElementById('btnIleri').addEventListener('click', sonrakiCumle);
+            document.getElementById('btnGeri').addEventListener('click', oncekiCumle);
+            document.getElementById('speedSelect').addEventListener('change', () => { if(isPlaying) seslendir(aktifCumleIndex); });
+            
+            document.getElementById('anaKapak').addEventListener('click', () => {
+                if(!aktifDergi) return;
+                modalImage.src = aktifDergi.kapakResmi;
+                imageModal.classList.remove('hidden');
+                setTimeout(() => imageModal.classList.add('opacity-100'), 10);
+            });
+            imageModal.addEventListener('click', () => {
+                imageModal.classList.remove('opacity-100');
+                setTimeout(() => imageModal.classList.add('hidden'), 200);
+            });
+            
+            themeToggle.addEventListener('click', () => { isDarkMode = !isDarkMode; applyTheme(); renderList(dergiVerileri); });
+            restoreLastSession();
+        }
+
+        function applyTheme() {
+            if(isDarkMode) {
+                document.body.className = "theme-dark h-screen w-screen flex flex-col md:flex-row overflow-hidden";
+                themeIcon.className = "fa-solid fa-sun text-base text-yellow-400";
+                localStorage.setItem('hakikat_theme', 'dark');
+            } else {
+                document.body.className = "theme-light h-screen w-screen flex flex-col md:flex-row overflow-hidden";
+                themeIcon.className = "fa-solid fa-moon text-base";
+                localStorage.setItem('hakikat_theme', 'light');
+            }
+        }
+
+        function renderList(data) {
+            const listDOM = document.getElementById('dergiListesi'); listDOM.innerHTML = '';
+            data.forEach(dergi => {
+                const card = document.createElement('div');
+                card.className = `card-item p-3 rounded-xl cursor-pointer border-l-4 border-transparent transition-all duration-200 shadow-sm ${aktifDergi && aktifDergi.id === dergi.id ? 'card-active' : ''}`;
+                card.onclick = () => { metniBas(dergi, 0); };
+                card.innerHTML = `
+                    <span class="card-title font-bold text-[11px] uppercase tracking-wider block mb-1">${dergi.sayi}</span>
+                    <h4 class="card-desc font-semibold text-xs leading-snug line-clamp-2">${dergi.konu}</h4>
+                `;
+                listDOM.appendChild(card);
+            });
+        }
+
+        function filtrele() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const res = dergiVerileri.filter(d => d.konu.toLowerCase().includes(query) || d.sayi.toLowerCase().includes(query));
+            renderList(res);
+        }
+
+        function metniBas(dergi, hedefCumleIndex = 0) {
+            durdet(); aktifDergi = dergi; renderList(dergiVerileri);
+            document.getElementById('emptyState').classList.add('hidden');
+            document.getElementById('readerWrapper').classList.remove('hidden');
+            document.getElementById('playerBaslik').textContent = dergi.sayi + " - " + dergi.konu;
+            document.getElementById('anaKonu').textContent = dergi.konu;
+            document.getElementById('anaKapak').src = dergi.kapakResmi;
+
+            cumleler = dergi.icerik.match(/[^.!?]+[.!?]+(\s|$)/g) || [dergi.icerik];
+            cumleler = cumleler.map(c => c.trim()).filter(c => c.length > 0);
+
+            const metinDOM = document.getElementById('metinAlani'); metinDOM.innerHTML = '';
+            cumleler.forEach((cumle, idx) => {
+                const span = document.createElement('span'); span.className = 'sentence'; span.id = `c-${idx}`; span.textContent = cumle + ' ';
+                span.onclick = () => { aktifCumleIndex = idx; saveSession(); if(isPlaying) seslendir(idx); else vurgula(idx); };
+                metinDOM.appendChild(span);
+            });
+
+            aktifCumleIndex = hedefCumleIndex; vurgula(aktifCumleIndex); saveSession();
+        }
+
+        function seslendir(index) {
+            synth.cancel(); if (index < 0 || index >= cumleler.length) { durdet(); return; }
+            aktifCumleIndex = index; vurgula(index); saveSession();
+            utterance = new SpeechSynthesisUtterance(cumleler[index]); utterance.lang = 'tr-TR';
+            utterance.rate = parseFloat(document.getElementById('speedSelect').value);
+            utterance.onend = () => { if (isPlaying) sonrakiCumle(); };
+            synth.speak(utterance);
+        }
+
+        function vurgula(index) {
+            document.querySelectorAll('.sentence-active').forEach(el => el.classList.remove('sentence-active'));
+            const el = document.getElementById(`c-${index}`);
+            if (el) { el.classList.add('sentence-active'); el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+        }
+
+        function togglePlay() {
+            if(!aktifDergi) return;
+            if (isPlaying) { durdet(); } 
+            else { isPlaying = true; document.getElementById('playIcon').className = "fa-solid fa-pause text-base"; seslendir(aktifCumleIndex === -1 ? 0 : aktifCumleIndex); }
+        }
+        function durdet() { isPlaying = false; document.getElementById('playIcon').className = "fa-solid fa-play text-base ml-0.5"; synth.cancel(); }
+        function sonrakiCumle() { if (aktifCumleIndex < cumleler.length - 1) { aktifCumleIndex++; if (isPlaying) seslendir(aktifCumleIndex); else vurgula(aktifCumleIndex); } else { durdet(); } }
+        function oncekiCumle() { if (aktifCumleIndex > 0) { aktifCumleIndex--; if (isPlaying) seslendir(aktifCumleIndex); else vurgula(aktifCumleIndex); } }
+
+        function saveSession() {
+            if (aktifDergi) {
+                localStorage.setItem('hakikat_son_dergi_id', aktifDergi.id);
+                localStorage.setItem('hakikat_son_cumle_index', aktifCumleIndex);
+            }
+        }
+        function restoreLastSession() {
+            const sonDergiId = localStorage.getItem('hakikat_son_dergi_id');
+            const sonCumleIdx = localStorage.getItem('hakikat_son_cumle_index');
+            if (sonDergiId) {
+                const bulunanDergi = dergiVerileri.find(d => d.id == sonDergiId);
+                if (bulunanDergi) { metniBas(bulunanDergi, sonCumleIdx ? parseInt(sonCumleIdx) : 0); }
+            }
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
