@@ -35,7 +35,7 @@ const BASE='https://www.hakikat.com';
 const state={issues:[],issue:null,articles:[],article:null,sentences:[],idx:0,playing:false,voices:[]};
 const $=id=>document.getElementById(id);
 function toast(t){$('toast').textContent=t;$('toast').style.display='block';clearTimeout(window._tt);window._tt=setTimeout(()=>$('toast').style.display='none',3500)}
-function urlFor(u){const mode=$('mode').value;if(mode==='direct')return u;if(mode==='allorigins')return 'https://api.allorigins.win/raw?url='+encodeURIComponent(u);return 'https://r.jina.ai/http://r.jina.ai/http://'.replace('http://r.jina.ai/http://','https://r.jina.ai/http://')+u.replace(/^https?:\/\//,'')}
+function urlFor(u){const mode=$('mode').value;if(mode==='direct')return u;if(mode==='allorigins')return 'https://api.allorigins.win/raw?url='+encodeURIComponent(u);return 'https://r.jina.ai/http://'+u.replace(/^https?:\/\//,'')}
 async function getText(u){let r=await fetch(urlFor(u),{cache:'no-store'});if(!r.ok)throw new Error('Bağlantı hatası: '+r.status);return await r.text()}
 function clean(s){return (s||'').replace(/\s+/g,' ').replace(/\[([^\]]+)\]\([^\)]+\)/g,'$1').replace(/[*_#>`]/g,'').trim()}
 function splitSentences(txt){return clean(txt).replace(/([.!?…])\s+(?=[A-ZÇĞİÖŞÜÂÎÛ0-9“\"])/g,'$1|').split('|').map(x=>x.trim()).filter(x=>x.length>12)}
@@ -109,10 +109,10 @@ function showReaderScreen(){$('app').classList.remove('catalog');$('app').classL
 function speakCurrent(){if(!state.sentences.length)return;window.speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(state.sentences[state.idx]);u.lang='tr-TR';u.rate=parseFloat($('rateSel').value)||1;let v=state.voices.find(x=>x.name===$('voiceSel').value);if(v)u.voice=v;u.onend=()=>{if(state.playing&&state.idx<state.sentences.length-1){next();setTimeout(speakCurrent,120)}else state.playing=false};window.speechSynthesis.speak(u)}
 function play(){state.playing=true;speakCurrent()}function stop(){state.playing=false;window.speechSynthesis.cancel()}
 function loadVoices(){state.voices=speechSynthesis.getVoices().filter(v=>/tr|turkish/i.test(v.lang+' '+v.name));if(!state.voices.length)state.voices=speechSynthesis.getVoices();$('voiceSel').innerHTML=state.voices.map(v=>`<option>${v.name}</option>`).join('')}
-function saveLocal(){try{localStorage.setItem('hakikat_reader_data_v3',JSON.stringify({version:3,issues:state.issues,at:Date.now()}))}catch(e){}}
-function loadLocal(){try{let d=JSON.parse(localStorage.getItem('hakikat_reader_data_v3')||'{}');if(d.issues&&d.issues.length){state.issues=d.issues;renderIssues();toast('Kayıtlı veri açıldı.')}}catch(e){}}
+function saveLocal(){try{localStorage.setItem('hakikat_reader_data_v4',JSON.stringify({version:4,issues:state.issues,at:Date.now()}))}catch(e){}}
+function loadLocal(){try{let keys=['hakikat_reader_data_v4','hakikat_reader_data_v3','hakikat_reader_data_v2','hakikat_reader_data'];for(let k of keys){let d=JSON.parse(localStorage.getItem(k)||'{}');if(d.issues&&d.issues.length){state.issues=d.issues;renderIssues();toast('Kayıtlı veri açıldı.');return true}}}catch(e){}return false}
 function downloadJson(){let blob=new Blob([JSON.stringify({issues:state.issues},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hakikat_dergisi_data.json';a.click();URL.revokeObjectURL(a.href)}
-$('fetchBtn').onclick=loadAll;$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('stopBtn').onclick=stop;$('saveBtn').onclick=downloadJson;$('fileIn').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);state.issues=d.issues||[];saveLocal();renderIssues();toast('JSON yüklendi.')}catch(err){toast('JSON okunamadı.')}};r.readAsText(f)};speechSynthesis.onvoiceschanged=loadVoices;loadVoices();loadLocal();
+$('fetchBtn').onclick=loadAll;$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('stopBtn').onclick=stop;$('saveBtn').onclick=downloadJson;$('listBtn').onclick=showListScreen;$('fileIn').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);state.issues=d.issues||[];saveLocal();renderIssues();toast('JSON yüklendi.')}catch(err){toast('JSON okunamadı.')}};r.readAsText(f)};speechSynthesis.onvoiceschanged=loadVoices;loadVoices();if(!loadLocal()){setTimeout(loadAll,300)}
 window.loadIssue=loadIssue;window.selectArticle=selectArticle;
 </script>
 </body>
