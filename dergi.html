@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hakikat Dergisi Profesyonel Okuyucu v11</title>
+<title>Hakikat Dergisi Yerel Arşiv Okuyucu v2</title>
 <style>
-:root{--bg:#07101f;--panel:#0d1728;--panel2:#13223a;--line:#263b5f;--txt:#edf5ff;--muted:#9fb1c8;--brand:#43ddcd;--gold:#ffc64b;--red:#a9405a;--green:#29c27f;--blue:#29406d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#142946 0,#07101f 48%,#050914 100%);color:var(--txt);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial}.app{height:100vh;display:grid;grid-template-columns:350px 390px 1fr;overflow:hidden}.side,.middle,.reader{min-width:0;border-right:1px solid var(--line);background:rgba(8,16,30,.72);backdrop-filter:blur(10px)}.head{padding:18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}.logo{width:44px;height:44px;border-radius:16px;background:linear-gradient(135deg,#ffd45d,#ff892f);display:grid;place-items:center;color:#111;font-weight:900}.title h1{font-size:19px;margin:0}.title p{margin:3px 0 0;color:var(--muted);font-size:13px}.tools{padding:14px;display:grid;gap:10px}.row{display:flex;gap:8px}.inp,.sel{width:100%;border:1px solid var(--line);background:#091326;color:var(--txt);border-radius:14px;padding:12px}.btn{border:0;border-radius:14px;padding:11px 15px;font-weight:800;color:#06101e;background:var(--gold);cursor:pointer}.btn.secondary{background:#233a66;color:white}.btn.play{background:var(--brand);color:#041316}.btn.stop{background:var(--red);color:white}.btn:disabled{opacity:.45;cursor:not-allowed}.hint{margin:0 14px 14px;padding:12px;border:1px dashed #916f18;border-radius:14px;color:#ffe596;background:#17170d;font-size:12px}.list{height:calc(100vh - 230px);overflow:auto;padding:0 14px 18px;scrollbar-width:auto}.issue{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:13px;border:1px solid transparent;border-radius:16px;margin:8px 0;background:#111a2d;cursor:pointer}.issue:hover,.issue.active{border-color:var(--gold);background:#182640}.coverMini{height:78px;border-radius:10px;background:linear-gradient(150deg,#233d67,#111827);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);font-weight:900}.issue b{display:block}.issue small{color:var(--muted)}.issueProgress{grid-column:1/3;height:7px;background:#0a1222;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-top:2px}.issueProgress>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--gold))}.issuePct{font-size:10px;color:var(--gold);margin-top:4px}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.chip{font-size:10px;padding:4px 7px;border-radius:999px;background:#213452;color:#c6d6ee}.middle{overflow:auto}.issueView{padding:18px}.bigCover{height:300px;border-radius:24px;background:linear-gradient(160deg,#1c3760,#070d19);border:1px solid var(--line);display:grid;place-items:center;text-align:center;box-shadow:0 18px 45px rgba(0,0,0,.3);overflow:hidden}.bigCover img{width:100%;height:100%;object-fit:contain;background:#07101f}.bigCover .fallback{font-size:34px;font-weight:900;color:var(--gold)}.meta{display:flex;gap:10px;margin:14px 0}.stat{flex:1;background:#15223a;border:1px solid var(--line);border-radius:14px;padding:10px}.stat small{color:var(--gold);display:block}.sectionTitle{font-size:18px;margin:18px 0 10px}.article{padding:12px;border:1px solid var(--line);border-radius:14px;background:#101b2f;margin:8px 0;cursor:pointer}.article:hover,.article.active{border-color:var(--brand);background:#142741}.article b{display:block}.article small{color:var(--muted)}.reader{display:grid;grid-template-rows:auto minmax(0,1fr);height:100vh;overflow:hidden}.topbar{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;justify-content:space-between}.rtitle{min-width:0}.rtitle h2{margin:0;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rtitle p{margin:3px 0 0;color:var(--muted);font-size:12px}.controls{display:flex;gap:8px;align-items:center}.voice{max-width:230px}.progress{width:140px;height:8px;border:1px solid var(--line);border-radius:99px;overflow:hidden}.bar{height:100%;background:var(--brand);width:0}.content{overflow-y:scroll;overflow-x:hidden;padding:26px 34px 90px;height:100%;scrollbar-width:auto;overscroll-behavior:contain}.empty{height:100%;display:grid;place-items:center;text-align:center;color:#a9c6ef}.sentence{font-size:20px;line-height:1.75;margin:0 0 13px;padding:9px 12px;border-radius:14px;color:#e8f1ff}.sentence.done{color:#8c9ab1}.sentence.active{background:linear-gradient(90deg,rgba(255,198,75,.28),rgba(67,221,205,.1));outline:1px solid rgba(255,198,75,.5);color:white}.sentence.next{color:#dcecff}.load{position:fixed;inset:auto 20px 20px auto;background:#111a2d;border:1px solid var(--line);padding:12px 15px;border-radius:14px;color:#dbe8ff;box-shadow:0 15px 40px rgba(0,0,0,.4)}.app.catalog{grid-template-columns:350px 1fr}.app.catalog .reader{display:none}.app.catalog .middle{display:block}.backList{background:#1e355e;color:white}@media(max-width:1150px){.app{grid-template-columns:330px 1fr}.middle{display:none}}@media(max-width:720px){.app{display:block;overflow:auto}.side,.middle,.reader{height:auto;border-right:0}.list{height:360px}.middle{display:block}.reader{min-height:650px}.topbar{display:grid}.controls{flex-wrap:wrap}.content{padding:18px}.sentence{font-size:18px}.app.reading .side,.app.reading .middle{display:none}.app.catalog .reader{display:none}.app.catalog .side,.app.catalog .middle{display:block}}
+:root{--bg:#07101f;--panel:#0d1728;--panel2:#13223a;--line:#263b5f;--txt:#edf5ff;--muted:#9fb1c8;--brand:#43ddcd;--gold:#ffc64b;--red:#a9405a;--green:#29c27f;--blue:#29406d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#142946 0,#07101f 48%,#050914 100%);color:var(--txt);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial}.app{height:100vh;display:grid;grid-template-columns:350px 390px 1fr;overflow:hidden}.side,.middle,.reader{min-width:0;border-right:1px solid var(--line);background:rgba(8,16,30,.72);backdrop-filter:blur(10px)}.head{padding:18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}.logo{width:44px;height:44px;border-radius:16px;background:linear-gradient(135deg,#ffd45d,#ff892f);display:grid;place-items:center;color:#111;font-weight:900}.title h1{font-size:19px;margin:0}.title p{margin:3px 0 0;color:var(--muted);font-size:13px}.tools{padding:14px;display:grid;gap:10px}.row{display:flex;gap:8px}.inp,.sel{width:100%;border:1px solid var(--line);background:#091326;color:var(--txt);border-radius:14px;padding:12px}.btn{border:0;border-radius:14px;padding:11px 15px;font-weight:800;color:#06101e;background:var(--gold);cursor:pointer}.btn.secondary{background:#233a66;color:white}.btn.play{background:var(--brand);color:#041316}.btn.stop{background:var(--red);color:white}.btn:disabled{opacity:.45;cursor:not-allowed}.hint{margin:0 14px 14px;padding:12px;border:1px dashed #916f18;border-radius:14px;color:#ffe596;background:#17170d;font-size:12px}.list{height:calc(100vh - 230px);overflow:auto;padding:0 14px 18px;scrollbar-width:auto}.issue{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:13px;border:1px solid transparent;border-radius:16px;margin:8px 0;background:#111a2d;cursor:pointer}.issue:hover,.issue.active{border-color:var(--gold);background:#182640}.coverMini{height:78px;border-radius:10px;background:linear-gradient(150deg,#233d67,#111827);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);font-weight:900}.issue b{display:block}.issue small{color:var(--muted)}.issueProgress{grid-column:1/3;height:7px;background:#0a1222;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-top:2px}.issueProgress>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--gold))}.issuePct{font-size:10px;color:var(--gold);margin-top:4px}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.chip{font-size:10px;padding:4px 7px;border-radius:999px;background:#213452;color:#c6d6ee}.middle{overflow:auto}.issueView{padding:18px}.bigCover{height:300px;border-radius:24px;background:linear-gradient(160deg,#1c3760,#070d19);border:1px solid var(--line);display:grid;place-items:center;text-align:center;box-shadow:0 18px 45px rgba(0,0,0,.3);overflow:hidden}.bigCover img{width:100%;height:100%;object-fit:contain;background:#07101f}.bigCover .fallback{font-size:34px;font-weight:900;color:var(--gold)}.meta{display:flex;gap:10px;margin:14px 0}.stat{flex:1;background:#15223a;border:1px solid var(--line);border-radius:14px;padding:10px}.stat small{color:var(--gold);display:block}.sectionTitle{font-size:18px;margin:18px 0 10px}.article{padding:12px;border:1px solid var(--line);border-radius:14px;background:#101b2f;margin:8px 0;cursor:pointer}.article:hover,.article.active{border-color:var(--brand);background:#142741}.article b{display:block}.article small{color:var(--muted)}.reader{display:grid;grid-template-rows:auto minmax(0,1fr);height:100vh;overflow:hidden}.topbar{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;justify-content:space-between}.rtitle{min-width:0}.rtitle h2{margin:0;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rtitle p{margin:3px 0 0;color:var(--muted);font-size:12px}.controls{display:flex;gap:8px;align-items:center}.voice{max-width:230px}.progress{width:140px;height:8px;border:1px solid var(--line);border-radius:99px;overflow:hidden}.bar{height:100%;background:var(--brand);width:0}.content{overflow-y:scroll;overflow-x:hidden;padding:26px 34px 90px;height:100%;scrollbar-width:auto;overscroll-behavior:contain}.empty{height:100%;display:grid;place-items:center;text-align:center;color:#a9c6ef}.sentence{font-size:20px;line-height:1.75;margin:0 0 13px;padding:9px 12px;border-radius:14px;color:#e8f1ff}.sentence.done{color:#8c9ab1}.sentence.active{background:linear-gradient(90deg,rgba(255,198,75,.28),rgba(67,221,205,.1));outline:1px solid rgba(255,198,75,.5);color:white}.sentence.next{color:#dcecff}.load{position:fixed;inset:auto 20px 20px auto;background:#111a2d;border:1px solid var(--line);padding:12px 15px;border-radius:14px;color:#dbe8ff;box-shadow:0 15px 40px rgba(0,0,0,.4)}.app.catalog{grid-template-columns:350px 1fr}.app.catalog .reader{display:none}.app.catalog .middle{display:block}.backList{background:#1e355e;color:white}@media(max-width:1150px){.app{grid-template-columns:330px 1fr}.middle{display:none}}@media(max-width:720px){html,body{height:100%;overflow:hidden}.app{height:100dvh;display:block;overflow:auto;-webkit-overflow-scrolling:touch}.side,.middle,.reader{height:auto;border-right:0}.list{height:360px;-webkit-overflow-scrolling:touch}.middle{display:block}.reader{min-height:650px}.topbar{display:grid}.controls{flex-wrap:wrap}.content{padding:18px;-webkit-overflow-scrolling:touch;touch-action:pan-y}.sentence{font-size:18px}.app.reading{height:100dvh;overflow:hidden}.app.reading .side,.app.reading .middle{display:none!important}.app.reading .reader{display:grid;grid-template-rows:auto minmax(0,1fr);height:100dvh;min-height:0;overflow:hidden;border-right:0}.app.reading .topbar{position:sticky;top:0;z-index:50;background:rgba(7,16,31,.96);backdrop-filter:blur(10px);box-shadow:0 8px 22px rgba(0,0,0,.35);padding:9px 10px;gap:8px}.app.reading .rtitle h2{font-size:15px;max-width:100%}.app.reading .rtitle p{font-size:11px}.app.reading .controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;align-items:center}.app.reading .controls .btn{padding:9px 6px;font-size:12px;border-radius:11px}.app.reading .voice{grid-column:1/3;max-width:none;width:100%;min-width:0}.app.reading #rateSel{grid-column:3;width:100%!important}.app.reading .progress{grid-column:4;width:100%;height:7px}.app.reading #count{grid-column:1/5;text-align:center;font-size:12px;color:var(--muted)}.app.reading .content{height:auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding:16px 14px 120px}.app.reading .sentence{font-size:18px;line-height:1.65;margin-bottom:10px}.app.catalog .reader{display:none}.app.catalog .side,.app.catalog .middle{display:block}}
 </style>
 </head>
 <body>
@@ -13,14 +13,14 @@
 <aside class="side">
   <div class="head"><div class="logo">H</div><div class="title"><h1>Hakikat Dergisi</h1><p>Kapak, sayı, konu, makale ve sesli okuma.</p></div></div>
   <div class="tools">
-    <div class="row"><input id="q" class="inp" placeholder="Sayı, tarih, konu ara..."><button id="fetchBtn" class="btn">Çek</button></div>
-    <select id="mode" class="sel"><option value="jina">Jina Reader proxy - CORS güvenli</option></select>
-    <div class="row"><button id="saveBtn" class="btn secondary">JSON Kaydet</button><label class="btn secondary" style="text-align:center"><input id="fileIn" type="file" accept="application/json" hidden>JSON Yükle</label></div>
+    <div class="row"><input id="q" class="inp" placeholder="Sayı, tarih, konu ara..."><button id="fetchBtn" class="btn">Yenile</button></div>
+    <select id="mode" class="sel"><option value="jina">Yerel data/index.json</option></select>
+    <div class="row"><button id="saveBtn" class="btn secondary">Veriyi Kaydet</button><label class="btn secondary" style="text-align:center"><input id="fileIn" type="file" accept="application/json" hidden>Veri Yükle</label></div>
   </div>
-  <p class="hint">Not: Netlify/GitHub Pages üzerinde doğrudan çekim CORS nedeniyle engellenebilir. Bu sürüm proxy ile okur ve çekilen veriyi IndexedDB/localStorage içine kaydeder.</p>
+  <p class="hint">Not: Bu sürüm ek hizmet kullanmaz. Kapak ve içerikler bilgisayarda guncelle.bat ile üretilen data/ ve kapaklar/ klasörlerinden okunur. İlerleme tarayıcıda kalıcı saklanır.</p>
   <div id="issueList" class="list"></div>
 </aside>
-<section class="middle"><div id="issueView" class="issueView"><div class="empty"><div><h2>Önce “Çek” düğmesine basın.</h2><p>Sonra soldan dergi sayısı seçin.</p></div></div></div></section>
+<section class="middle"><div id="issueView" class="issueView"><div class="empty"><div><h2>Yerel arşiv yükleniyor...</h2><p>data/index.json dosyası varsa sayılar otomatik gelir.</p></div></div></div></section>
 <main class="reader">
   <div class="topbar">
     <div class="rtitle"><h2 id="readerTitle">Dergi seçiniz</h2><p id="readerSub">Makale seçildiğinde cümleler burada açılır.</p></div>
@@ -32,9 +32,20 @@
 <div id="toast" class="load" style="display:none"></div>
 <script>
 const BASE='https://www.hakikat.com';
-const DATA_KEY='hakikat_reader_data_v11';
+const DATA_KEY='hakikat_reader_data_local_v1';
 const PROGRESS_KEY='hakikat_reader_progress_v11';
 const STATIC_DATA_URL='data/index.json';
+async function loadIssueJson(issue){
+  if(issue.articles && issue.articles.length) return issue;
+  if(!issue.contentFile) return issue;
+  const r=await fetch(issue.contentFile+'?v='+Date.now(),{cache:'no-store'});
+  if(!r.ok) throw new Error(issue.contentFile+' okunamadı');
+  const d=await r.json();
+  Object.assign(issue,d);
+  issue.url=issue.url||slugIssue(issue.no);
+  issue.cover=issue.cover||d.cover||knownCover(issue.no)||'';
+  return issue;
+}
 const COVER_FALLBACKS={
   393:'https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-393-kapak-haki-72846771-66fd-4027-930f-1a01d4c53e10.jpg',
   392:'https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-392-kapak-tera-9289f36f-a2c8-4bbf-82f6-bf4b8d3c9823.jpg',
@@ -148,7 +159,7 @@ function parseIssuePage(md,issue){
   let rawLines=md.split(/\n+/).map(x=>x.trim()).filter(Boolean);
   let lines=stripSiteNoise(rawLines);
   let title=`${issue.no}.SAYI, ${issue.date}`;
-  let cover=extractCover(md,issue)||issue.cover||knownCover(issue.no)||'';
+  let cover=issue.cover||extractCover(md,issue)||knownCover(issue.no)||'';
 
   // Orta bölüm metin parçalamaz: her sayı tek ana metin olarak tutulur.
   let contentStart=0;
@@ -172,11 +183,11 @@ function parseIssuePage(md,issue){
   let articles=[{title:mainTitle,text:fullText,kind:'full'}];
   return {...issue,title:mainTitle,cover,topics:[mainTitle],articles,raw:md};
 }
-function renderIssues(){let q=$('q').value.toLowerCase().trim();let list=state.issues.filter(x=>!q||(`${x.no} ${x.date} ${x.title} ${(x.topics||[]).join(' ')}`).toLowerCase().includes(q));$('issueList').innerHTML=list.map(x=>{let pr=state.progress[x.no]||{};let total=pr.total||0, idx=pr.idx||0;let pct=total?Math.min(100,Math.round(((idx+1)/total)*100)):0;return `<div class="issue ${state.issue&&state.issue.no===x.no?'active':''}" onclick="loadIssue(${x.no})"><div class="coverMini">${x.cover?`<img src="${x.cover}" style="width:100%;height:100%;object-fit:cover;border-radius:9px" onerror="this.parentElement.textContent='${x.no}'">`:x.no}</div><div><b>${x.title}</b><small>${x.date}</small><div class="chips">${(x.topics||[]).slice(0,3).map(t=>`<span class="chip">${t}</span>`).join('')}</div><div class="issuePct">${total?`Okuma: %${pct} · ${Math.min(idx+1,total)}/${total}`:'Henüz okunmadı'}</div></div><div class="issueProgress"><i style="width:${pct}%"></i></div></div>`}).join('')||'<p class="hint">Sonuç yok.</p>'}
+function renderIssues(){let q=$('q').value.toLowerCase().trim();let list=state.issues.filter(x=>!q||(`${x.no} ${x.date} ${x.title} ${(x.topics||[]).join(' ')}`).toLowerCase().includes(q));$('issueList').innerHTML=list.map(x=>{let pr=state.progress[x.no]||{};let total=pr.total||0, idx=pr.idx||0;let pct=total?Math.min(100,Math.round(((idx+1)/total)*100)):0;return `<div class="issue ${state.issue&&state.issue.no===x.no?'active':''}" onclick="loadIssue(${x.no})"><div class="coverMini">${x.cover?`<img src="${x.cover}" referrerpolicy="no-referrer" style="width:100%;height:100%;object-fit:cover;border-radius:9px" onerror="this.parentElement.textContent='${x.no}'">`:x.no}</div><div><b>${x.title}</b><small>${x.date}</small><div class="chips">${(x.topics||[]).slice(0,3).map(t=>`<span class="chip">${t}</span>`).join('')}</div><div class="issuePct">${total?`Okuma: %${pct} · ${Math.min(idx+1,total)}/${total}`:'Henüz okunmadı'}</div></div><div class="issueProgress"><i style="width:${pct}%"></i></div></div>`}).join('')||'<p class="hint">Sonuç yok.</p>'}
 function renderIssue(){
   let x=state.issue;if(!x)return;
   const coverHtml=x.cover
-    ? `<img src="${x.cover}" onerror="this.parentElement.innerHTML='<div class=\'fallback\'>${x.no}<br><small>${x.date}</small><br><small>Kapak yüklenemedi</small></div>'">`
+    ? `<img src="${x.cover}" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML='<div class=\'fallback\'>${x.no}<br><small>${x.date}</small><br><small>Kapak yüklenemedi</small></div>'">`
     : `<div class="fallback">${x.no}<br><small>${x.date}</small><br><small>Kapak aranıyor / bulunamadı</small></div>`;
   const readCount=splitSentences((x.articles&&x.articles[0]?x.articles[0].text:'')).length;
   $('issueView').innerHTML=`
@@ -193,7 +204,7 @@ function renderIssue(){
       <small>Bu derginin metni sağdaki okuma ekranında tek akış halinde açılır. Orta bölümde metin parçalanmaz.</small>
     </div>`;
 }
-function renderContent(){let s=state.sentences;$('count').textContent=s.length?`${state.idx+1}/${s.length}`:'0/0';$('bar').style.width=s.length?((state.idx+1)/s.length*100)+'%':'0';if(!s.length){$('content').innerHTML='<div class="empty"><div><h2>Makale seçiniz.</h2></div></div>';return}$('content').innerHTML=s.map((x,i)=>`<p id="s${i}" class="sentence ${i<state.idx?'done':i===state.idx?'active':'next'}">${x}</p>`).join('');let el=$('s'+state.idx);if(el)el.scrollIntoView({block:'center',behavior:'smooth'});saveProgress();}
+function scrollActiveSentence(){let c=$('content'),el=$('s'+state.idx);if(!c||!el)return;let top=el.offsetTop-(c.clientHeight/2)+(el.clientHeight/2);c.scrollTo({top:Math.max(0,top),behavior:'smooth'});}function renderContent(){let s=state.sentences;$('count').textContent=s.length?`${state.idx+1}/${s.length}`:'0/0';$('bar').style.width=s.length?((state.idx+1)/s.length*100)+'%':'0';if(!s.length){$('content').innerHTML='<div class="empty"><div><h2>Makale seçiniz.</h2></div></div>';return}$('content').innerHTML=s.map((x,i)=>`<p id="s${i}" class="sentence ${i<state.idx?'done':i===state.idx?'active':'next'}">${x}</p>`).join('');requestAnimationFrame(scrollActiveSentence);saveProgress();}
 function persistProgress(){try{localStorage.setItem(PROGRESS_KEY,JSON.stringify(state.progress));}catch(e){}}
 function saveProgress(){if(!state.issue||!state.sentences.length)return;state.progress[String(state.issue.no)]={idx:state.idx,total:state.sentences.length,title:state.issue.title||'',at:Date.now()};persistProgress();renderIssues()}
 function loadProgress(){state.progress={};const keys=[PROGRESS_KEY,'hakikat_reader_progress_v10','hakikat_reader_progress_v8','hakikat_reader_progress_v7','hakikat_reader_progress_v6'];for(const k of keys){try{const d=JSON.parse(localStorage.getItem(k)||'{}')||{};state.progress={...d,...state.progress};}catch(e){}}}
@@ -202,24 +213,42 @@ async function loadStaticIndex(){
   const r=await fetch(STATIC_DATA_URL+'?v=' + Date.now(),{cache:'no-store'});
   if(!r.ok) throw new Error('data/index.json bulunamadı');
   const d=await r.json();
-  const issues=(d.issues||[]).map(x=>({...x,no:Number(x.no),url:x.url||slugIssue(x.no),cover:x.cover||knownCover(x.no)||''}));
+  const issues=(d.issues||[]).map(x=>({...x,no:Number(x.no),url:x.url||slugIssue(x.no),cover:x.cover||x.localCover||knownCover(x.no)||'',contentFile:x.contentFile||('data/'+x.no+'.json')}));
   if(!issues.length) throw new Error('data/index.json boş');
   state.issues=mergeIssuesFresh(issues);
   loadProgress();saveLocal();renderIssues();
   toast('Yerel JSON yüklendi: '+issues.length+' sayı. Kapaklar JSON’dan geliyor.');
   return true;
 }
-async function loadAll(){try{toast('Yerel veri paketi aranıyor...');await loadStaticIndex();return;}catch(e){} try{toast('Sayı listesi proxy ile çekiliyor...');let txt=await getText(BASE+'/hakikat-dergisi');let fresh=parseIssueList(txt);if(!fresh.length)throw new Error('Sayı listesi bulunamadı.');state.issues=mergeIssuesFresh(fresh);loadProgress();saveLocal();renderIssues();toast(state.issues.length+' sayı listelendi. Kapaklar için data/index.json önerilir.');}catch(e){toast('Hata: '+e.message);loadLocal();}}
+async function loadAll(){
+  try{
+    toast('Yerel data/index.json aranıyor...');
+    await loadStaticIndex();
+    return;
+  }catch(e){
+    loadProgress();
+    loadLocal();
+    $('issueView').innerHTML='<div class="empty"><div><h2>Yerel veri bulunamadı.</h2><p>Önce bilgisayarda <b>guncelle.bat</b> çalıştırın. Sonra oluşan <b>data</b> ve <b>kapaklar</b> klasörlerini GitHub’a yükleyin.</p></div></div>';
+    toast('data/index.json bulunamadı veya boş. guncelle.bat çalıştırılmalı.');
+  }
+}
 async function loadIssue(no){
-  let issue=state.issues.find(x=>x.no===no);if(!issue)return;
-  issue.url=slugIssue(no);
+  let issue=state.issues.find(x=>Number(x.no)===Number(no));if(!issue)return;
+  issue.url=issue.url||slugIssue(no);
   stop();state.issue=issue;state.article=null;state.sentences=[];state.idx=0;
   renderIssues();renderIssue();
   $('readerTitle').textContent=`${issue.no}.SAYI, ${issue.date}`;
   $('readerSub').textContent='İçerik yükleniyor...';
-  $('content').innerHTML='<div class="empty"><div><h2>İçerik yükleniyor...</h2><p>Seçilen sayı temiz şekilde hazırlanıyor.</p></div></div>';
+  $('content').innerHTML='<div class="empty"><div><h2>İçerik yükleniyor...</h2><p>Yerel arşiv dosyası okunuyor.</p></div></div>';
   try{
-    toast(no+'. sayı içeriği çekiliyor...');
+    if(issue.contentFile || (issue.articles&&issue.articles.length)){
+      await loadIssueJson(issue);
+      state.issue=issue;
+      renderIssues();renderIssue();saveLocal();selectArticle(0);
+      toast('Yerel içerik hazır.');
+      return;
+    }
+    toast(no+'. sayı internetten çekiliyor...');
     let md=await getText(issue.url);
     let full=parseIssuePage(md,issue);
     if(!full.cover){toast('Kapak resmi aranıyor...'); full.cover=knownCover(no)||await findCoverFromHtml(issue);}
@@ -230,8 +259,8 @@ async function loadIssue(no){
     state.article=null;state.sentences=[];renderIssue();
     $('readerTitle').textContent=`${issue.no}.SAYI, ${issue.date}`;
     $('readerSub').textContent='Çekilemedi';
-    $('content').innerHTML='<div class="empty"><div><h2>Bu sayı çekilemedi</h2><p>Proxy zaman aşımına uğradı. Tekrar Çek düğmesine basın.</p></div></div>';
-    toast('Sayı çekilemedi: '+e.message);
+    $('content').innerHTML='<div class="empty"><div><h2>Bu sayı açılamadı</h2><p>Önce bilgisayarda guncelle.bat çalıştırıp data dosyalarını üretin. Hata: '+String(e.message||e)+'</p></div></div>';
+    toast('Sayı açılamadı: '+e.message);
   }
 }
 function selectArticle(i){state.article=i;let a=state.issue.articles[i];state.sentences=splitSentences(a.text);let saved=state.progress[state.issue.no];state.idx=(saved&&saved.total===state.sentences.length)?Math.min(saved.idx,state.sentences.length-1):0;$('readerTitle').textContent=a.title;$('readerSub').textContent=state.issue.title+' • '+state.sentences.length+' cümle';renderIssue();renderContent();showReaderScreen();}
@@ -243,8 +272,8 @@ function showReaderScreen(){$('app').classList.remove('catalog');$('app').classL
 function speakCurrent(){if(!state.sentences.length)return;window.speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(state.sentences[state.idx]);u.lang='tr-TR';u.rate=parseFloat($('rateSel').value)||1;let v=state.voices.find(x=>x.name===$('voiceSel').value);if(v)u.voice=v;u.onend=()=>{if(state.playing&&state.idx<state.sentences.length-1){next();setTimeout(speakCurrent,120)}else state.playing=false};window.speechSynthesis.speak(u)}
 function play(){state.playing=true;speakCurrent()}function stop(){state.playing=false;window.speechSynthesis.cancel()}
 function loadVoices(){state.voices=speechSynthesis.getVoices().filter(v=>/tr|turkish/i.test(v.lang+' '+v.name));if(!state.voices.length)state.voices=speechSynthesis.getVoices();$('voiceSel').innerHTML=state.voices.map(v=>`<option>${v.name}</option>`).join('')}
-function saveLocal(){try{localStorage.setItem(DATA_KEY,JSON.stringify({version:11,issues:state.issues,at:Date.now()}));persistProgress();}catch(e){}}
-function loadLocal(){try{let keys=[DATA_KEY,'hakikat_reader_data_v9','hakikat_reader_data_v8','hakikat_reader_data_v7','hakikat_reader_data_v6','hakikat_reader_data_v5','hakikat_reader_data_v4','hakikat_reader_data_v3','hakikat_reader_data_v2','hakikat_reader_data'];for(let k of keys){let d=JSON.parse(localStorage.getItem(k)||'{}');if(d.issues&&d.issues.length){state.issues=d.issues.map(x=>({...x,url:slugIssue(x.no)}));loadProgress();if(d.progress){state.progress={...d.progress,...state.progress};persistProgress();}renderIssues();toast('Kayıtlı veri açıldı.');return true}}}catch(e){}loadProgress();return false}
+function saveLocal(){try{localStorage.setItem(DATA_KEY,JSON.stringify({version:12,issues:state.issues,at:Date.now()}));persistProgress();}catch(e){}}
+function loadLocal(){try{let keys=[DATA_KEY,'hakikat_reader_data_v11','hakikat_reader_data_v10','hakikat_reader_data_v9','hakikat_reader_data_v8','hakikat_reader_data_v7','hakikat_reader_data_v6','hakikat_reader_data_v5','hakikat_reader_data_v4','hakikat_reader_data_v3','hakikat_reader_data_v2','hakikat_reader_data'];for(let k of keys){let d=JSON.parse(localStorage.getItem(k)||'{}');if(d.issues&&d.issues.length){state.issues=d.issues.map(x=>({...x,url:slugIssue(x.no)}));loadProgress();if(d.progress){state.progress={...d.progress,...state.progress};persistProgress();}renderIssues();toast('Kayıtlı veri açıldı.');return true}}}catch(e){}loadProgress();return false}
 function downloadJson(){let blob=new Blob([JSON.stringify({issues:state.issues},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hakikat_dergisi_data.json';a.click();URL.revokeObjectURL(a.href)}
 $('fetchBtn').onclick=loadAll;$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('stopBtn').onclick=stop;$('saveBtn').onclick=downloadJson;$('listBtn').onclick=showListScreen;$('fileIn').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let d=JSON.parse(r.result);state.issues=(d.issues||[]).map(x=>({...x,url:slugIssue(x.no)}));loadProgress();saveLocal();renderIssues();toast('JSON yüklendi.')}catch(err){toast('JSON okunamadı.')}};r.readAsText(f)};speechSynthesis.onvoiceschanged=loadVoices;loadVoices();loadProgress();if(!loadLocal()){setTimeout(loadAll,300)}
 window.addEventListener('beforeunload',()=>{if(state.issue&&state.sentences.length)saveProgress();});
