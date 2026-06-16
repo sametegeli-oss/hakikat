@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Hakikat Dergisi Yerel Arşiv Okuyucu v9</title>
+<title>Hakikat Dergisi Yerel Arşiv Okuyucu v11</title>
 <style>
 :root{--bg:#07101f;--panel:#0d1728;--panel2:#13223a;--line:#263b5f;--txt:#edf5ff;--muted:#9fb1c8;--brand:#43ddcd;--gold:#ffc64b;--red:#a9405a;--green:#29c27f;--blue:#29406d}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#142946 0,#07101f 48%,#050914 100%);color:var(--txt);font:15px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Arial}.app{height:100vh;display:grid;grid-template-columns:350px 390px 1fr;overflow:hidden}.side,.middle,.reader{min-width:0;border-right:1px solid var(--line);background:rgba(8,16,30,.72);backdrop-filter:blur(10px)}.head{padding:18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center}.logo{width:44px;height:44px;border-radius:16px;background:linear-gradient(135deg,#ffd45d,#ff892f);display:grid;place-items:center;color:#111;font-weight:900}.title h1{font-size:19px;margin:0}.title p{margin:3px 0 0;color:var(--muted);font-size:13px}.tools{padding:14px;display:grid;gap:10px}.row{display:flex;gap:8px}.inp,.sel{width:100%;border:1px solid var(--line);background:#091326;color:var(--txt);border-radius:14px;padding:12px}.btn{border:0;border-radius:14px;padding:11px 15px;font-weight:800;color:#06101e;background:var(--gold);cursor:pointer}.btn.secondary{background:#233a66;color:white}.btn.play{background:var(--brand);color:#041316}.btn.stop{background:var(--red);color:white}.btn:disabled{opacity:.45;cursor:not-allowed}.hint{margin:0 14px 14px;padding:12px;border:1px dashed #916f18;border-radius:14px;color:#ffe596;background:#17170d;font-size:12px}.list{height:calc(100vh - 150px);overflow:auto;padding:0 14px 18px;scrollbar-width:auto}.issue{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:13px;border:1px solid transparent;border-radius:16px;margin:8px 0;background:#111a2d;cursor:pointer}.issue:hover,.issue.active{border-color:var(--gold);background:#182640}.coverMini{height:92px;border-radius:10px;background:linear-gradient(150deg,#233d67,#111827);border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);font-weight:900;overflow:hidden;padding:3px}.coverMini img{width:100%;height:100%;object-fit:contain;border-radius:7px;display:block;background:#07101f}.issue b{display:block}.issue small{color:var(--muted)}.issueProgress{grid-column:1/3;height:7px;background:#0a1222;border:1px solid var(--line);border-radius:99px;overflow:hidden;margin-top:2px}.issueProgress>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--gold))}.issuePct{font-size:10px;color:var(--gold);margin-top:4px}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.chip{font-size:10px;padding:4px 7px;border-radius:999px;background:#213452;color:#c6d6ee}.middle{overflow:auto}.issueView{padding:18px}.bigCover{width:100%;min-height:360px;max-height:calc(100vh - 310px);aspect-ratio:3/4;border-radius:24px;background:linear-gradient(160deg,#1c3760,#070d19);border:1px solid var(--line);display:grid;place-items:center;text-align:center;box-shadow:0 18px 45px rgba(0,0,0,.3);overflow:hidden;padding:10px}.bigCover img{width:100%;height:100%;object-fit:contain;object-position:center;background:#07101f;border-radius:18px;display:block}.bigCover .fallback{font-size:34px;font-weight:900;color:var(--gold)}.meta{display:flex;gap:10px;margin:14px 0}.stat{flex:1;background:#15223a;border:1px solid var(--line);border-radius:14px;padding:10px}.stat small{color:var(--gold);display:block}.sectionTitle{font-size:18px;margin:18px 0 10px}.article{padding:12px;border:1px solid var(--line);border-radius:14px;background:#101b2f;margin:8px 0;cursor:pointer}.article:hover,.article.active{border-color:var(--brand);background:#142741}.article b{display:block}.article small{color:var(--muted)}.reader{display:grid;grid-template-rows:auto minmax(0,1fr);height:100vh;overflow:hidden}.topbar{padding:14px 16px;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;justify-content:space-between}.rtitle{min-width:0}.rtitle h2{margin:0;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rtitle p{margin:3px 0 0;color:var(--muted);font-size:12px}.controls{display:flex;gap:8px;align-items:center}.voice{max-width:230px}.progress{width:140px;height:8px;border:1px solid var(--line);border-radius:99px;overflow:hidden}.bar{height:100%;background:var(--brand);width:0}.content{overflow-y:scroll;overflow-x:hidden;padding:26px 34px 90px;height:100%;scrollbar-width:auto;overscroll-behavior:contain}.empty{height:100%;display:grid;place-items:center;text-align:center;color:#a9c6ef}.sentence{font-size:20px;line-height:1.75;margin:0 0 13px;padding:9px 12px;border-radius:14px;color:#e8f1ff}.sentence.done{color:#8c9ab1}.sentence.active{background:linear-gradient(90deg,rgba(255,198,75,.28),rgba(67,221,205,.1));outline:1px solid rgba(255,198,75,.5);color:white}.sentence.next{color:#dcecff}.load{position:fixed;inset:auto 20px 20px auto;background:#111a2d;border:1px solid var(--line);padding:12px 15px;border-radius:14px;color:#dbe8ff;box-shadow:0 15px 40px rgba(0,0,0,.4)}.app.catalog{grid-template-columns:350px 1fr}.app.catalog .reader{display:none}.app.catalog .middle{display:block}.backList{background:#1e355e;color:white}@media(max-width:1150px){.app{grid-template-columns:330px 1fr}.middle{display:none}}@media(max-width:720px){html,body{height:100%;overflow:hidden}.app{height:100dvh;display:block;overflow:auto;-webkit-overflow-scrolling:touch}.side,.middle,.reader{height:auto;border-right:0}.list{height:360px;-webkit-overflow-scrolling:touch}.middle{display:block}.bigCover{min-height:380px;max-height:none;aspect-ratio:3/4}.reader{min-height:650px}.topbar{display:grid}.controls{flex-wrap:wrap}.content{padding:18px;-webkit-overflow-scrolling:touch;touch-action:pan-y}.sentence{font-size:18px}.app.reading{height:100dvh;overflow:hidden}.app.reading .side,.app.reading .middle{display:none!important}.app.reading .reader{display:grid;grid-template-rows:auto minmax(0,1fr);height:100dvh;min-height:0;overflow:hidden;border-right:0}.app.reading .topbar{position:sticky;top:0;z-index:50;background:rgba(7,16,31,.96);backdrop-filter:blur(10px);box-shadow:0 8px 22px rgba(0,0,0,.35);padding:9px 10px;gap:8px}.app.reading .rtitle h2{font-size:15px;max-width:100%}.app.reading .rtitle p{font-size:11px}.app.reading .controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;align-items:center}.app.reading .controls .btn{padding:9px 6px;font-size:12px;border-radius:11px}.app.reading .voice{grid-column:1/3;max-width:none;width:100%;min-width:0}.app.reading #rateSel{grid-column:3;width:100%!important}.app.reading .progress{grid-column:4;width:100%;height:7px}.app.reading #count{grid-column:1/5;text-align:center;font-size:12px;color:var(--muted)}.app.reading .content{height:auto;min-height:0;overflow-y:auto!important;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding:16px 14px 120px}.app.reading .sentence{font-size:18px;line-height:1.65;margin-bottom:10px}.app.catalog .reader{display:none}.app.catalog .side,.app.catalog .middle{display:block}}
 
@@ -26,6 +26,10 @@ body.light .sentence{color:#172b42}body.light .sentence.done{color:#8b98a8}body.
 @media(max-width:720px){.quick{padding-bottom:70px}.bottomNav{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#050914;border-top:1px solid var(--line);z-index:9998}.bottomNav button{border:0;background:#111a2d;color:#dcecff;padding:9px 4px;font-size:11px;font-weight:800}.app.reading .bottomNav{display:none}.modalBox{max-height:82vh}.dashboard{grid-template-columns:repeat(2,1fr)}.galleryGrid{grid-template-columns:repeat(2,1fr)}}
 @media print{body{background:white!important;color:#111!important}.side,.middle,.topbar,.bottomNav,.modal,.load{display:none!important}.app,.reader{display:block!important;height:auto!important;overflow:visible!important}.content{height:auto!important;overflow:visible!important;padding:0!important}.sentence{color:#111!important;page-break-inside:avoid;font-size:14pt!important}.sentence.active{background:#fff4c2!important}}
 
+
+/* v11: kontrol paneli, odak okuma, veri kontrol ve alıntı kartı */
+.homePanel{padding:18px;display:grid;gap:16px}.homeHero{border:1px solid var(--line);background:linear-gradient(135deg,rgba(67,221,205,.14),rgba(255,198,75,.1));border-radius:24px;padding:18px}.homeHero h2{margin:0 0 6px;font-size:28px}.homeGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.homeCard{border:1px solid var(--line);background:#101b2f;border-radius:18px;padding:14px;cursor:pointer}.homeCard:hover{border-color:var(--brand);background:#142741}.homeCard small{display:block;color:var(--muted);margin-top:5px}.homeCard b{font-size:18px}.homeActions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.homeActions .btn{width:100%}.app.focus{display:block}.app.focus .side,.app.focus .middle{display:none!important}.app.focus .reader{display:grid!important;width:100vw;height:100vh;border-right:0}.app.focus .topbar{position:sticky;top:0;z-index:70;background:rgba(7,16,31,.97);box-shadow:0 8px 26px rgba(0,0,0,.35)}.app.focus .content{font-size:calc(var(--readFont,20px) * 1.05);padding-left:min(7vw,90px);padding-right:min(7vw,90px)}.dataGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.dataBox{border:1px solid var(--line);background:#101b2f;border-radius:16px;padding:12px}.dataBox small{color:var(--muted);display:block}.dataBox b{font-size:22px;color:var(--gold)}.quoteCard{background:linear-gradient(145deg,#f8f0da,#fffdf7);color:#172036;border-radius:24px;padding:28px;border:8px solid #d7b45b;box-shadow:0 18px 50px rgba(0,0,0,.35);font-family:Georgia,serif}.quoteCard .qtext{font-size:24px;line-height:1.55}.quoteCard .qsrc{margin-top:22px;font:bold 15px system-ui;color:#5f4a13}.quotePreviewWrap{background:#07101f;border:1px solid var(--line);border-radius:18px;padding:14px}.auditList{max-height:270px;overflow:auto;border:1px solid var(--line);border-radius:14px;padding:10px;background:#091326}.auditOk{color:#61e6a5}.auditBad{color:#ff8aa1}.auditWarn{color:#ffc64b}.readModeHelp{color:var(--muted);font-size:12px}@media(max-width:720px){.homeGrid{grid-template-columns:1fr 1fr}.homeActions{grid-template-columns:1fr}.dataGrid{grid-template-columns:1fr 1fr}.app.focus .content{padding-left:16px;padding-right:16px}.quoteCard .qtext{font-size:19px}}
+
 </style>
 </head>
 <body>
@@ -38,7 +42,8 @@ body.light .sentence{color:#172b42}body.light .sentence.done{color:#8b98a8}body.
   <div id="continueBanner" class="continueBanner"></div>
   <div class="quick">
     <div class="quickRow"><button id="continueBtn" class="btn small ghost">↩ Devam Et</button><button id="todayBtn" class="btn small ghost">🎯 Bugün Ne Okuyayım?</button></div>
-    <div class="quickRow"><button id="archiveSearchBtn" class="btn small ghost">🔎 Metin Ara</button><button id="statsBtn" class="btn small ghost">📊 İstatistikler</button></div>
+    <div class="quickRow"><button id="homeBtn" class="btn small ghost">🏠 Kontrol Paneli</button><button id="archiveSearchBtn" class="btn small ghost">🔎 Metin Ara</button></div>
+    <div class="quickRow"><button id="statsBtn" class="btn small ghost">📊 İstatistikler</button><button id="auditBtn" class="btn small ghost">🧪 Veri Kontrol</button></div>
     <div class="quickRow"><button id="favListBtn" class="btn small ghost">⭐ Favoriler</button><button id="noteListBtn" class="btn small ghost">📝 Notlar</button></div>
     <div class="quickRow"><button id="topicsBtn" class="btn small ghost">🏷️ Konular</button><button id="galleryBtn" class="btn small ghost">🖼️ Kapak Galerisi</button></div>
     <div class="quickRow"><button id="planBtn" class="btn small ghost">✅ Okuma Hedefi</button><button id="backupBtn" class="btn small ghost">💾 Yedek</button></div>
@@ -51,7 +56,7 @@ body.light .sentence{color:#172b42}body.light .sentence.done{color:#8b98a8}body.
 <main class="reader">
   <div class="topbar">
     <div class="rtitle"><h2 id="readerTitle">Dergi seçiniz</h2><p id="readerSub">Makale seçildiğinde cümleler burada açılır.</p></div>
-    <div class="controls"><button id="listBtn" class="btn secondary">📚 Listeye Dön</button><button id="favBtn" class="btn secondary icon" title="Bu cümleyi favoriye ekle">☆</button><button id="noteBtn" class="btn secondary icon" title="Bu cümleye not yaz">📝</button><button id="markBtn" class="btn secondary icon" title="Bu cümleyi devam noktası yap">📍</button><button id="prevBtn" class="btn secondary">◀ Geri</button><button id="nextBtn" class="btn secondary">İleri ▶</button><button id="repeatBtn" class="btn secondary">↻ Tekrar</button><button id="playBtn" class="btn play">Sesli Oku</button><button id="play10Btn" class="btn play">10 Cümle</button><button id="stopBtn" class="btn stop">Durdur</button><button id="printBtn" class="btn secondary">PDF/Yazdır</button><select id="voiceSel" class="sel voice"></select><select id="rateSel" class="sel" style="width:90px"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.15">1.15x</option><option value="1.3">1.3x</option></select><div class="progress"><div id="bar" class="bar"></div></div><span id="count">0/0</span></div>
+    <div class="controls"><button id="listBtn" class="btn secondary">📚 Listeye Dön</button><button id="focusBtn" class="btn secondary">⛶ Okuma Modu</button><button id="quoteBtn" class="btn secondary">🖼️ Alıntı</button><button id="favBtn" class="btn secondary icon" title="Bu cümleyi favoriye ekle">☆</button><button id="noteBtn" class="btn secondary icon" title="Bu cümleye not yaz">📝</button><button id="markBtn" class="btn secondary icon" title="Bu cümleyi devam noktası yap">📍</button><button id="prevBtn" class="btn secondary">◀ Geri</button><button id="nextBtn" class="btn secondary">İleri ▶</button><button id="repeatBtn" class="btn secondary">↻ Tekrar</button><button id="playBtn" class="btn play">Sesli Oku</button><button id="play10Btn" class="btn play">10 Cümle</button><button id="stopBtn" class="btn stop">Durdur</button><button id="printBtn" class="btn secondary">PDF/Yazdır</button><select id="voiceSel" class="sel voice"></select><select id="rateSel" class="sel" style="width:90px"><option value="0.8">0.8x</option><option value="1" selected>1x</option><option value="1.15">1.15x</option><option value="1.3">1.3x</option></select><div class="progress"><div id="bar" class="bar"></div></div><span id="count">0/0</span></div>
   </div>
   <div id="content" class="content"><div class="empty"><div><h2>Okuma ekranı hazır.</h2><p>Soldan sayı, ortadan makale seçin.</p></div></div></div>
 </main>
@@ -92,7 +97,7 @@ const COVER_FALLBACKS={
   388:'https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-388-kapak-hate-a9a5ee6f-5a1a-4704-92fc-8797a457b456.jpg'
 };
 function knownCover(no){return COVER_FALLBACKS[String(no)]||COVER_FALLBACKS[Number(no)]||''}
-const state={issues:[],issue:null,articles:[],article:null,sentences:[],idx:0,playing:false,readUntil:null,voices:[],progress:{},favorites:{},notes:{},settings:{readFont:20,theme:'dark',dailyGoal:20},customChars:{},daily:{},dataMeta:{},suppressScroll:false,_dailyLastKey:''};
+const state={issues:[],issue:null,articles:[],article:null,sentences:[],idx:0,playing:false,readUntil:null,voices:[],progress:{},favorites:{},notes:{},settings:{readFont:20,theme:'dark',dailyGoal:20},customChars:{},daily:{},dataMeta:{},searchIndex:null,searchIndexReady:false,suppressScroll:false,_dailyLastKey:''};
 const $=id=>document.getElementById(id);
 function toast(t){$('toast').textContent=t;$('toast').style.display='block';clearTimeout(window._tt);window._tt=setTimeout(()=>$('toast').style.display='none',3500)}
 
@@ -537,7 +542,7 @@ async function loadStaticIndex(){
   if(!issues.length) throw new Error('data/index.json boş');
   state.issues=mergeIssuesFresh(issues);
   state.dataMeta={at:Date.now(),source:'data/index.json',count:issues.length};
-  loadProgress();saveLocal();renderIssues();updateContinueBanner();
+  loadProgress();saveLocal();renderIssues();updateContinueBanner(); if(!state.issue) renderHomeDashboard();
   toast('Yerel JSON yüklendi: '+issues.length+' sayı. Kapaklar JSON’dan geliyor.');
   return true;
 }
@@ -596,9 +601,157 @@ function loadVoices(){state.voices=speechSynthesis.getVoices().filter(v=>/tr|tur
 function saveLocal(){try{localStorage.setItem(DATA_KEY,JSON.stringify({version:14,issues:state.issues,at:Date.now(),dataMeta:state.dataMeta}));persistProgress();}catch(e){}}
 function loadLocal(){try{let keys=[DATA_KEY,'hakikat_reader_data_v11','hakikat_reader_data_v10','hakikat_reader_data_v9','hakikat_reader_data_v8','hakikat_reader_data_v7','hakikat_reader_data_v6','hakikat_reader_data_v5','hakikat_reader_data_v4','hakikat_reader_data_v3','hakikat_reader_data_v2','hakikat_reader_data'];for(let k of keys){let d=JSON.parse(localStorage.getItem(k)||'{}');if(d.issues&&d.issues.length){state.issues=d.issues.map(x=>normalizeIssueTextFields({...x,url:slugIssue(x.no)}));state.dataMeta=d.dataMeta||{at:d.at||0,source:'localStorage',count:state.issues.length};loadProgress();if(d.progress){state.progress={...d.progress,...state.progress};persistProgress();}renderIssues();updateContinueBanner();toast('Kayıtlı veri açıldı.');return true}}}catch(e){}loadProgress();return false}
 function downloadJson(){let blob=new Blob([JSON.stringify({issues:state.issues},null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hakikat_dergisi_data.json';a.click();URL.revokeObjectURL(a.href)}
-$('fetchBtn').onclick=loadAll;$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('play10Btn').onclick=playTen;$('repeatBtn').onclick=repeatCurrent;$('stopBtn').onclick=stop;$('printBtn').onclick=printCurrent;$('markBtn').onclick=markContinuePoint;$('listBtn').onclick=showListScreen;$('favBtn').onclick=()=>toggleFavorite();$('noteBtn').onclick=()=>openNote();$('continueBtn').onclick=continueLast;$('todayBtn').onclick=showTodaySuggestion;$('archiveSearchBtn').onclick=showArchiveSearch;$('statsBtn').onclick=showStats;$('favListBtn').onclick=showFavorites;$('noteListBtn').onclick=showNotes;$('topicsBtn').onclick=showTopics;$('galleryBtn').onclick=showGallery;$('planBtn').onclick=showPlan;$('backupBtn').onclick=showBackup;$('themeBtn').onclick=toggleTheme;$('fontDecBtn').onclick=()=>setFont(-1);$('fontIncBtn').onclick=()=>setFont(1);$('charMapBtn').onclick=showCharMapSettings;$('navListBtn').onclick=showListScreen;$('navSearchBtn').onclick=showArchiveSearch;$('navFavBtn').onclick=showFavorites;$('navNotesBtn').onclick=showNotes;$('navSettingsBtn').onclick=showSettingsMenu;$('modalClose').onclick=closeModal;$('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});let __scrollTimer=null;$('content').addEventListener('scroll',()=>{clearTimeout(__scrollTimer);__scrollTimer=setTimeout(updateFromScroll,120)},{passive:true});speechSynthesis.onvoiceschanged=loadVoices;loadVoices();loadExtras();loadProgress();if(!loadLocal()){setTimeout(loadAll,300)}else updateContinueBanner()
+
+
+/* ===== v11 ek özellikler: kontrol paneli + arama indeksi + odak modu + veri kontrol + alıntı kartı ===== */
+async function loadSearchIndex(){
+  if(state.searchIndexReady) return state.searchIndex;
+  state.searchIndexReady=true;
+  try{
+    const r=await fetch('data/search-index.json?v='+Date.now(),{cache:'no-store'});
+    if(r.ok){
+      const d=await r.json();
+      const items=Array.isArray(d.items)?d.items:[];
+      state.searchIndex=items.map(x=>({
+        no:Number(x.no),date:normalizeTurkishText(x.date||''),title:normalizeTurkishText(x.title||''),idx:Number(x.idx)||0,articleIndex:Number(x.articleIndex)||0,text:normalizeTurkishText(x.text||'')
+      }));
+      return state.searchIndex;
+    }
+  }catch(e){}
+  state.searchIndex=null;
+  return null;
+}
+async function runArchiveSearch(){
+  let term=($('archiveTerm').value||'').trim();
+  if(term.length<2){$('searchStatus').textContent='En az 2 harf yazın.';return}
+  let lower=normalizeForSearch(term);
+  let scope=($('searchScope')&&$('searchScope').value)||'all';
+  let status=($('searchStatusFilter')&&$('searchStatusFilter').value)||'all';
+  let results=[],seen=new Set(),fail=0,searched=0;
+  $('searchResults').innerHTML='';
+  $('searchStatus').textContent='Arama hazırlanıyor...';
+  if(scope==='fav'){
+    Object.values(state.favorites||{}).forEach(x=>{if(normalizeForSearch((x.text||'')+' '+(x.title||'')).includes(lower))pushSearchResult(results,{...x,date:x.date||'',title:x.title||'',text:x.text||'',articleIndex:0},seen)});
+  } else if(scope==='notes'){
+    Object.values(state.notes||{}).forEach(x=>{if(normalizeForSearch((x.text||'')+' '+(x.title||'')+' '+(x.note||'')).includes(lower))pushSearchResult(results,{...x,date:x.date||'',title:x.title||'',text:(x.text||'')+' — Not: '+(x.note||''),articleIndex:0},seen)});
+  } else {
+    const idx=await loadSearchIndex();
+    if(idx && (scope==='all'||scope==='body') && status==='all'){
+      $('searchStatus').textContent='Hızlı arama indeksi taranıyor...';
+      for(const x of idx){
+        if(normalizeForSearch((scope==='body'?x.text:(x.title+' '+x.text))).includes(lower)) pushSearchResult(results,x,seen);
+        if(results.length>=500) break;
+      }
+      searched='arama indeksi';
+    } else {
+      const list=(state.issues||[]).slice();
+      for(let n=0;n<list.length;n++){
+        let issue=list[n];
+        if(!issueSearchStatusOk(issue,status)) continue;
+        searched++;
+        $('searchStatus').textContent=`Tüm arşiv taranıyor: ${n+1}/${list.length} — bulunan ${results.length}`;
+        try{
+          await prepareIssueForSearch(issue);
+          const articles=getIssueSearchArticles(issue);
+          if(!articles.length){fail++;continue;}
+          articles.forEach((a,articleIndex)=>{
+            const titleBlob=(issue.title||'')+' '+(a.title||'')+' '+((issue.topics||[]).join(' '));
+            if((scope==='all'||scope==='title')&&normalizeForSearch(titleBlob).includes(lower)){
+              pushSearchResult(results,{no:issue.no,date:issue.date,title:a.title||issue.title,idx:0,articleIndex,text:(issue.title||a.title||'Başlık sonucu')},seen);
+            }
+            if(scope==='all'||scope==='body'){
+              let sent=splitSentences(a.text||'');
+              if(!sent.length && a.text) sent=clean(a.text).split(/\n{2,}|(?<=[.!?…])\s+/).map(x=>x.trim()).filter(x=>x.length>8);
+              sent.forEach((s,i)=>{if(normalizeForSearch(s).includes(lower))pushSearchResult(results,{no:issue.no,date:issue.date,title:a.title||issue.title,idx:i,articleIndex,text:s},seen);});
+            }
+          });
+        }catch(e){fail++;}
+        if(results.length>=500) break;
+      }
+      saveLocal();
+    }
+  }
+  results=results.slice(0,500);
+  const extra=fail?` ${fail} sayı dosyası okunamadı; data klasörünün GitHub'a tam yüklendiğini kontrol edin.`:'';
+  $('searchStatus').textContent=`${results.length} sonuç gösteriliyor. ${searched?searched+' tarandı. ':''}${state.searchIndex?'Hızlı arama indeksi kullanıldı. ':''}Git düğmesine basınca ilgili sayı ve cümle açılır.${extra}`;
+  $('searchResults').innerHTML=results.length?results.map(r=>`
+    <div class="modalItem searchResult">
+      <div class="resultText">
+        <b>${r.no}. SAYI, ${esc(r.date||'')} — ${(Number(r.idx)||0)+1}. cümle</b>
+        <small>${esc(r.title||'')}</small>
+        <p>${hi(r.text||'',term)}</p>
+      </div>
+      <button class="btn small play goBtn" onclick="goToSearchResult(${Number(r.no)},${Number(r.idx)||0},${Number(r.articleIndex)||0})">Git</button>
+    </div>`).join(''):'<p>Sonuç bulunamadı. Tüm sayılarda arama için <b>data/*.json</b> dosyaları veya <b>data/search-index.json</b> yüklü olmalı.</p>';
+}
+function dashboardStatsHtml(){
+  const st=currentStats();
+  const pct=st.total?Math.round(st.done/st.total*100):0;
+  const last=Object.entries(state.progress||{}).sort((a,b)=>(b[1].at||0)-(a[1].at||0))[0];
+  let lastTxt='Henüz okuma kaydı yok';
+  if(last){const issue=state.issues.find(x=>String(x.no)===String(last[0]));lastTxt=`${last[0]}. sayı ${issue?issue.date:''} — ${(last[1].idx||0)+1}. cümle`;}
+  return `<div class="homeHero"><h2>Hakikat Dergisi Okuyucu</h2><p>Kişisel arşiv, sesli okuma, notlar, favoriler ve tüm arşiv araması.</p><p><b>Kaldığınız yer:</b> ${esc(lastTxt)}</p></div>
+  <div class="homeGrid"><div class="homeCard" onclick="showStats()"><b>${st.total}</b><small>Toplam dergi</small></div><div class="homeCard" onclick="showStats()"><b>${st.done}</b><small>Tamamlanan</small></div><div class="homeCard" onclick="showPlan()"><b>${st.today}/${st.goal}</b><small>Bugünkü hedef</small></div><div class="homeCard" onclick="showFavorites()"><b>${st.favs}</b><small>Favoriler</small></div><div class="homeCard" onclick="showNotes()"><b>${st.notes}</b><small>Notlar</small></div><div class="homeCard" onclick="showDataAudit()"><b>%${pct}</b><small>Genel ilerleme</small></div></div>
+  <div class="homeActions"><button class="btn play" onclick="continueLast()">↩ Kaldığım Yerden Devam Et</button><button class="btn secondary" onclick="showArchiveSearch()">🔎 Tüm Arşivde Ara</button><button class="btn secondary" onclick="showTodaySuggestion()">🎯 Bugün Ne Okuyayım?</button><button class="btn secondary" onclick="showGallery()">🖼️ Kapak Galerisi</button><button class="btn secondary" onclick="showDataAudit()">🧪 Veri Kontrol</button><button class="btn secondary" onclick="showUpdateInfo()">🔄 Güncelleme Bilgisi</button></div>`;
+}
+function renderHomeDashboard(){
+  if(!$('issueView')) return;
+  $('issueView').innerHTML=`<div class="homePanel">${dashboardStatsHtml()}</div>`;
+}
+function showDashboard(){stop();$('app').classList.add('catalog');$('app').classList.remove('reading','focus');renderHomeDashboard();}
+function toggleFocusMode(){
+  if(!$('app').classList.contains('focus')){showReaderScreen();$('app').classList.add('focus');$('focusBtn').textContent='↙ Normal';toast('Odak okuma modu açıldı.');}
+  else{$('app').classList.remove('focus');$('focusBtn').textContent='⛶ Okuma Modu';toast('Normal görünüme dönüldü.');}
+}
+function showDataAudit(){
+  const total=state.issues.length;
+  const cover=(state.issues||[]).filter(x=>x.cover||x.localCover).length;
+  const json=(state.issues||[]).filter(x=>x.contentFile).length;
+  const st=currentStats();
+  showModal('Veri Kontrol',`<div class="dataGrid"><div class="dataBox"><small>Toplam sayı</small><b>${total}</b></div><div class="dataBox"><small>Kapak yolu olan</small><b>${cover}</b></div><div class="dataBox"><small>İçerik dosyası olan</small><b>${json}</b></div><div class="dataBox"><small>Favori</small><b>${st.favs}</b></div><div class="dataBox"><small>Not</small><b>${st.notes}</b></div><div class="dataBox"><small>Arama indeksi</small><b id="auditIdx">kontrol</b></div></div><div class="actionLine" style="margin-top:12px"><button class="btn play" onclick="runDataAuditDetailed()">Detaylı Kontrol</button><button class="btn secondary" onclick="showUpdateInfo()">Güncelleme Bilgisi</button></div><div id="auditDetail" class="auditList" style="margin-top:12px">Detaylı kontrol için düğmeye basın.</div>`);
+  loadSearchIndex().then(idx=>{let el=$('auditIdx');if(el)el.textContent=idx?idx.length:'yok'});
+}
+async function runDataAuditDetailed(){
+  const box=$('auditDetail'); if(!box) return;
+  let missingCover=[],missingJson=[],badJson=[];
+  const list=(state.issues||[]).slice();
+  for(let i=0;i<list.length;i++){
+    const x=list[i];
+    box.innerHTML=`Kontrol ediliyor: ${i+1}/${list.length}`;
+    if(!(x.cover||x.localCover)) missingCover.push(x.no);
+    try{const r=await fetch((x.contentFile||('data/'+x.no+'.json'))+'?v='+Date.now(),{cache:'no-store'});if(!r.ok) missingJson.push(x.no);else{const d=await r.json();if(!d.articles||!d.articles.length) badJson.push(x.no);}}
+    catch(e){missingJson.push(x.no)}
+  }
+  box.innerHTML=`<p class="${missingCover.length?'auditWarn':'auditOk'}">Kapak yolu eksik: ${missingCover.length}${missingCover.length?' — '+missingCover.slice(0,40).join(', '):''}</p><p class="${missingJson.length?'auditBad':'auditOk'}">JSON eksik/okunamadı: ${missingJson.length}${missingJson.length?' — '+missingJson.slice(0,40).join(', '):''}</p><p class="${badJson.length?'auditWarn':'auditOk'}">Metin boş görünen: ${badJson.length}${badJson.length?' — '+badJson.slice(0,40).join(', '):''}</p>`;
+}
+function showQuoteCard(){
+  if(!state.issue||!state.sentences.length){toast('Önce bir cümle seçin.');return}
+  const text=state.sentences[state.idx];
+  const src=`Hakikat Dergisi, ${state.issue.no}. Sayı, ${state.issue.date||''}, ${state.idx+1}. cümle`;
+  showModal('Alıntı Kartı',`<div class="quotePreviewWrap"><div id="quoteCard" class="quoteCard"><div class="qtext">“${esc(text)}”</div><div class="qsrc">${esc(src)}</div></div></div><div class="actionLine" style="margin-top:12px"><button class="btn play" onclick="copyQuoteText()">Metni Kopyala</button><button class="btn secondary" onclick="downloadQuoteSvg()">Görsel Kart İndir</button><button class="btn secondary" onclick="toggleFavorite()">⭐ Favorile</button></div>`);
+}
+function copyQuoteText(){
+  if(!state.issue||!state.sentences.length)return;
+  const out=`“${state.sentences[state.idx]}”\n\nHakikat Dergisi, ${state.issue.no}. Sayı, ${state.issue.date||''}, ${state.idx+1}. cümle`;
+  navigator.clipboard&&navigator.clipboard.writeText(out).then(()=>toast('Alıntı kopyalandı.')).catch(()=>toast('Kopyalama desteklenmedi.'));
+}
+function downloadQuoteSvg(){
+  if(!state.issue||!state.sentences.length)return;
+  const text=state.sentences[state.idx].replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
+  const src=`Hakikat Dergisi, ${state.issue.no}. Sayı, ${state.issue.date||''}, ${state.idx+1}. cümle`.replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]));
+  const words=text.split(/\s+/); let lines=[''];
+  for(const w of words){let last=lines[lines.length-1]; if((last+' '+w).length>54) lines.push(w); else lines[lines.length-1]=(last?last+' ':'')+w;}
+  lines=lines.slice(0,10);
+  const tspans=lines.map((l,i)=>`<tspan x="70" y="${120+i*42}">${l}</tspan>`).join('');
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><rect width="100%" height="100%" fill="#fff8e6"/><rect x="35" y="35" width="1130" height="730" rx="34" fill="#fffdf7" stroke="#d7b45b" stroke-width="10"/><text x="70" y="90" font-family="Georgia,serif" font-size="34" fill="#172036">${tspans}</text><text x="70" y="720" font-family="Arial,sans-serif" font-size="28" font-weight="700" fill="#5f4a13">${src}</text></svg>`;
+  const blob=new Blob([svg],{type:'image/svg+xml'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`hakikat-alinti-${state.issue.no}-${state.idx+1}.svg`;a.click();URL.revokeObjectURL(a.href);
+}
+function showUpdateInfo(){let at=state.dataMeta&&state.dataMeta.at;let txt=at?new Date(at).toLocaleString('tr-TR'):'Bilinmiyor';showModal('Veri Güncelleme Durumu',`<div class="planBox"><p><b>Toplam sayı:</b> ${state.issues.length}</p><p><b>Son veri yükleme:</b> ${txt}</p><p><b>Hızlı arama indeksi:</b> <span id="updateIdxInfo">kontrol ediliyor...</span></p><p>Yeni sayı çıktıysa bilgisayarda <b>guncelle_ve_yukle.bat</b> çalıştırabilirsiniz. Bu dosya güncelleme + git add/commit/push işlemini tek seferde dener.</p><p>Git kurulu değilse normal yol: <b>guncelle.bat</b> çalıştır → GitHub Desktop → Commit + Push.</p></div>`);loadSearchIndex().then(idx=>{let el=$('updateIdxInfo');if(el)el.textContent=idx?idx.length+' cümle':'bulunamadı'})}
+function showSettingsMenu(){showModal('Ayarlar',`<div class="actionLine"><button class="btn secondary" onclick="showCharMapSettings()">Karakter Dönüşümleri</button><button class="btn secondary" onclick="toggleTheme()">Tema Değiştir</button><button class="btn secondary" onclick="showPlan()">Okuma Hedefi</button><button class="btn secondary" onclick="showBackup()">Yedek</button><button class="btn secondary" onclick="showUpdateInfo()">Güncelleme Bilgisi</button><button class="btn secondary" onclick="showDataAudit()">Veri Kontrol</button><button class="btn secondary" onclick="toggleFocusMode()">Odak Okuma Modu</button></div>`) }
+
+$('fetchBtn').onclick=loadAll;$('q').oninput=renderIssues;$('nextBtn').onclick=next;$('prevBtn').onclick=prev;$('playBtn').onclick=play;$('play10Btn').onclick=playTen;$('repeatBtn').onclick=repeatCurrent;$('stopBtn').onclick=stop;$('printBtn').onclick=printCurrent;$('focusBtn').onclick=toggleFocusMode;$('quoteBtn').onclick=showQuoteCard;$('markBtn').onclick=markContinuePoint;$('listBtn').onclick=showListScreen;$('favBtn').onclick=()=>toggleFavorite();$('noteBtn').onclick=()=>openNote();$('continueBtn').onclick=continueLast;$('todayBtn').onclick=showTodaySuggestion;$('archiveSearchBtn').onclick=showArchiveSearch;$('homeBtn').onclick=showDashboard;$('auditBtn').onclick=showDataAudit;$('statsBtn').onclick=showStats;$('favListBtn').onclick=showFavorites;$('noteListBtn').onclick=showNotes;$('topicsBtn').onclick=showTopics;$('galleryBtn').onclick=showGallery;$('planBtn').onclick=showPlan;$('backupBtn').onclick=showBackup;$('themeBtn').onclick=toggleTheme;$('fontDecBtn').onclick=()=>setFont(-1);$('fontIncBtn').onclick=()=>setFont(1);$('charMapBtn').onclick=showCharMapSettings;$('navListBtn').onclick=showListScreen;$('navSearchBtn').onclick=showArchiveSearch;$('navFavBtn').onclick=showFavorites;$('navNotesBtn').onclick=showNotes;$('navSettingsBtn').onclick=showSettingsMenu;$('modalClose').onclick=closeModal;$('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});let __scrollTimer=null;$('content').addEventListener('scroll',()=>{clearTimeout(__scrollTimer);__scrollTimer=setTimeout(updateFromScroll,120)},{passive:true});speechSynthesis.onvoiceschanged=loadVoices;loadVoices();loadExtras();loadProgress();if(!loadLocal()){setTimeout(loadAll,300)}else {updateContinueBanner(); if(!state.issue) renderHomeDashboard();}
 window.addEventListener('beforeunload',()=>{if(state.issue&&state.sentences.length)saveProgress();});
-window.loadIssue=loadIssue;window.selectArticle=selectArticle;window.continueLast=continueLast;window.goToSaved=goToSaved;window.saveCurrentNote=saveCurrentNote;window.deleteCurrentNote=deleteCurrentNote;window.runArchiveSearch=runArchiveSearch;window.goToSearchResult=goToSearchResult;window.jumpSentence=jumpSentence;window.showCharMapSettings=showCharMapSettings;window.saveCharMapSettings=saveCharMapSettings;window.resetCharMapSettings=resetCharMapSettings;window.previewCharMapSettings=previewCharMapSettings;window.removeFavoriteKey=removeFavoriteKey;window.removeNoteKey=removeNoteKey;window.showStats=showStats;window.showTodaySuggestion=showTodaySuggestion;window.showPlan=showPlan;window.savePlan=savePlan;window.showTopics=showTopics;window.showTopicIssues=showTopicIssues;window.showGallery=showGallery;window.showBackup=showBackup;window.exportBackup=exportBackup;window.importBackupFile=importBackupFile;window.toggleTheme=toggleTheme;window.markContinuePoint=markContinuePoint;window.repeatCurrent=repeatCurrent;window.playTen=playTen;window.printCurrent=printCurrent;window.showUpdateInfo=showUpdateInfo;window.showSettingsMenu=showSettingsMenu;
+window.loadIssue=loadIssue;window.selectArticle=selectArticle;window.continueLast=continueLast;window.goToSaved=goToSaved;window.saveCurrentNote=saveCurrentNote;window.deleteCurrentNote=deleteCurrentNote;window.runArchiveSearch=runArchiveSearch;window.showDashboard=showDashboard;window.toggleFocusMode=toggleFocusMode;window.showDataAudit=showDataAudit;window.runDataAuditDetailed=runDataAuditDetailed;window.showQuoteCard=showQuoteCard;window.copyQuoteText=copyQuoteText;window.downloadQuoteSvg=downloadQuoteSvg;window.goToSearchResult=goToSearchResult;window.jumpSentence=jumpSentence;window.showCharMapSettings=showCharMapSettings;window.saveCharMapSettings=saveCharMapSettings;window.resetCharMapSettings=resetCharMapSettings;window.previewCharMapSettings=previewCharMapSettings;window.removeFavoriteKey=removeFavoriteKey;window.removeNoteKey=removeNoteKey;window.showStats=showStats;window.showTodaySuggestion=showTodaySuggestion;window.showPlan=showPlan;window.savePlan=savePlan;window.showTopics=showTopics;window.showTopicIssues=showTopicIssues;window.showGallery=showGallery;window.showBackup=showBackup;window.exportBackup=exportBackup;window.importBackupFile=importBackupFile;window.toggleTheme=toggleTheme;window.markContinuePoint=markContinuePoint;window.repeatCurrent=repeatCurrent;window.playTen=playTen;window.printCurrent=printCurrent;window.showUpdateInfo=showUpdateInfo;window.showSettingsMenu=showSettingsMenu;
 </script>
 </body>
 </html>
