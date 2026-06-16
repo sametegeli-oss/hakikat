@@ -1,12 +1,2334 @@
 {
-  "generatedAt": "manuel-ilk-paket",
+  "generatedAt": "2026-06-16T06:15:16.425Z",
   "source": "https://www.hakikat.com/hakikat-dergisi",
   "issues": [
-    {"no":393,"date":"Haziran 2026","title":"393.SAYI, Haziran 2026","url":"https://www.hakikat.com/hakikat-dergisi/393-sayi","cover":"https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-393-kapak-haki-72846771-66fd-4027-930f-1a01d4c53e10.jpg","topics":[]},
-    {"no":392,"date":"Mayıs 2026","title":"392.SAYI, Mayıs 2026","url":"https://www.hakikat.com/hakikat-dergisi/392-sayi","cover":"https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-392-kapak-tera-9289f36f-a2c8-4bbf-82f6-bf4b8d3c9823.jpg","topics":[]},
-    {"no":391,"date":"Nisan 2026","title":"391.SAYI, Nisan 2026","url":"https://www.hakikat.com/hakikat-dergisi/391-sayi","cover":"https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-391-kapak-iran-45ed5ad6-7dde-4657-8c7a-3b3aed55e3ee.jpg","topics":[]},
-    {"no":390,"date":"Mart 2026","title":"390.SAYI, Mart 2026","url":"https://www.hakikat.com/hakikat-dergisi/390-sayi","cover":"https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-390-kapak-ulvi-d236422d-9266-49f5-a4b0-eda67fd5572b.jpg","topics":[]},
-    {"no":389,"date":"Şubat 2026","title":"389.SAYI, Şubat 2026","url":"https://www.hakikat.com/hakikat-dergisi/389-sayi","cover":"https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-389-kapak-insa-54d30582-d642-4d78-aecf-2f78268019e5.jpg","topics":[]},
-    {"no":388,"date":"Ocak 2026","title":"388.SAYI, Ocak 2026","url":"https://www.hakikat.com/hakikat-dergisi/388-sayi","cover":"https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-388-kapak-hate-a9a5ee6f-5a1a-4704-92fc-8797a457b456.jpg","topics":[]}
+    {
+      "no": 393,
+      "date": "Haziran 2026",
+      "title": "393.SAYI, Haziran 2026",
+      "url": "https://www.hakikat.com/hakikat-dergisi/393-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-393-kapak-haki-72846771-66fd-4027-930f-1a01d4c53e10.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 392,
+      "date": "Mayıs 2026",
+      "title": "392.SAYI, Mayıs 2026",
+      "url": "https://www.hakikat.com/hakikat-dergisi/392-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-392-kapak-tera-9289f36f-a2c8-4bbf-82f6-bf4b8d3c9823.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 391,
+      "date": "Nisan 2026",
+      "title": "391.SAYI, Nisan 2026",
+      "url": "https://www.hakikat.com/hakikat-dergisi/391-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-391-kapak-iran-45ed5ad6-7dde-4657-8c7a-3b3aed55e3ee.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 390,
+      "date": "Mart 2026",
+      "title": "390.SAYI, Mart 2026",
+      "url": "https://www.hakikat.com/hakikat-dergisi/390-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-390-kapak-ulvi-d236422d-9266-49f5-a4b0-eda67fd5572b.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 389,
+      "date": "Şubat 2026",
+      "title": "389.SAYI, Şubat 2026",
+      "url": "https://www.hakikat.com/hakikat-dergisi/389-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-389-kapak-insa-54d30582-d642-4d78-aecf-2f78268019e5.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 388,
+      "date": "Ocak 2026",
+      "title": "388.SAYI, Ocak 2026",
+      "url": "https://www.hakikat.com/hakikat-dergisi/388-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-388-kapak-hate-a9a5ee6f-5a1a-4704-92fc-8797a457b456.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 387,
+      "date": "Aralık 2025",
+      "title": "387.SAYI, Aralık 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/387-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-387-kapak-alla-54a1ef76-9b13-47e0-bc6d-859cef6177d4.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 386,
+      "date": "Kasım 2025",
+      "title": "386.SAYI, Kasım 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/386-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-386-kapak-birb-396d5693-10a4-4137-b06c-649c4d485ab1.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 385,
+      "date": "Ekim 2025",
+      "title": "385.SAYI, Ekim 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/385-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-385-kapak-dua-84c39791-df7c-4f4d-b1c5-7967492e3cc4.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 383,
+      "date": "Ağustos 2025",
+      "title": "383.SAYI, Ağustos 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/383-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-383-kapak-her-9423e17f-b601-474e-8cad-90ff00ac267d.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 382,
+      "date": "Temmuz 2025",
+      "title": "382.SAYI, Temmuz 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/382-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-382-kapak-bu-d-312853db-b7c3-484c-baa3-15152e79d6b5.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 381,
+      "date": "Haziran 2025",
+      "title": "381.SAYI, Haziran 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/381-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-381-kapak-omer-6a81973e-b678-4313-9e1e-92b02faa2fa3.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 380,
+      "date": "Mayıs 2025",
+      "title": "380.SAYI, Mayıs 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/380-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-380-kapak-ilim-6c2516d8-cf5f-4050-b312-81d7d8b614cb.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 379,
+      "date": "Nisan 2025",
+      "title": "379.SAYI, Nisan 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/379-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-379-kapak-itaa-dd59bfdc-221f-45af-82e7-bb844c7399f6.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 378,
+      "date": "Mart 2025",
+      "title": "378.SAYI, Mart 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/378-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-378-kapak-duny-edd769a5-b438-4aab-8a73-3c139c1b4ba6.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 377,
+      "date": "Şubat 2025",
+      "title": "377.SAYI, Şubat 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/377-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-377-kapak-iman-ed94a7ad-0724-4ef0-9223-46b2fb225591.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 376,
+      "date": "Ocak 2025",
+      "title": "376.SAYI, Ocak 2025",
+      "url": "https://www.hakikat.com/hakikat-dergisi/376-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-376-kapak-alla-f381a98a-d167-4d4d-8c8c-ecb8865b81a7.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 375,
+      "date": "Aralık 2024",
+      "title": "375.SAYI, Aralık 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/375-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-375-kapak-guze-884deacd-f475-40c7-a8d7-10a444f9d96f.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 374,
+      "date": "Kasım 2024",
+      "title": "374.SAYI, Kasım 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/374-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-374-kapak-goog-782e7345-16e7-414f-877e-d3500c9a8c28.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 373,
+      "date": "Ekim 2024",
+      "title": "373.SAYI, Ekim 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/373-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-373-kapak-bu-a-7e12ffe5-a887-4615-b3c6-6d15eb8f04c3.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 371,
+      "date": "Ağustos 2024",
+      "title": "371.SAYI, Ağustos 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/371-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-371-kapak-bela-bbfde32e-38b5-4cdd-bf77-4e129929f5e7.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 370,
+      "date": "Temmuz 2024",
+      "title": "370.SAYI, Temmuz 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/370-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-370-kapak-musl-0bbbfb2f-ed3f-4ec9-857b-c16266a26c26.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 369,
+      "date": "Haziran 2024",
+      "title": "369.SAYI, Haziran 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/369-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-369-kapak-duny-bdfbdeb6-798a-4743-80e0-b302587a532c.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 368,
+      "date": "Mayıs 2024",
+      "title": "368.SAYI, Mayıs 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/368-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-368-kapak-ahir-d5178209-676b-4692-a553-fa7a5cdf94fe.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 367,
+      "date": "Nisan 2024",
+      "title": "367.SAYI, Nisan 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/367-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-367-kapak-ahir-0b4f0c4b-3990-4d14-857c-7dba04e3ddc9.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 366,
+      "date": "Mart 2024",
+      "title": "366.SAYI, Mart 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/366-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-366-kapak-rama-18b5df4a-337f-4b89-acd9-718991844a79.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 365,
+      "date": "Şubat 2024",
+      "title": "365.SAYI, Şubat 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/365-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-365-kapak-mulk-6fd4df49-31be-4190-803e-af1709c814af.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 364,
+      "date": "Ocak 2024",
+      "title": "364.SAYI, Ocak 2024",
+      "url": "https://www.hakikat.com/hakikat-dergisi/364-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-364-kapak-din-df4da787-e990-4adb-a83f-3bb7da4f462e.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 363,
+      "date": "Aralık 2023",
+      "title": "363.SAYI, Aralık 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/363-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-363-kapak-isra-3f15744b-d58a-427c-b08d-2bcb9f053b36.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 362,
+      "date": "Kasım 2023",
+      "title": "362.SAYI, Kasım 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/362-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/362-kapak-0daa9ed5-a8ee-4eff-871f-a623522fa263.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 361,
+      "date": "Ekim 2023",
+      "title": "361.SAYI, Ekim 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/361-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-361-kapak-fitn-05aaf461-fcd6-412a-a3bf-d1895660e83a.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 359,
+      "date": "Ağustos 2023",
+      "title": "359.SAYI, Ağustos 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/359-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-359-kapak-kufu-e4821abe-b253-48ef-8256-28a413577200.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 358,
+      "date": "Temmuz 2023",
+      "title": "358.SAYI, Temmuz 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/358-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-358-kapak-uzer-0fac793a-b492-485c-bcb6-92fb6bea6f1e.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 357,
+      "date": "Haziran 2023",
+      "title": "357.SAYI, Haziran 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/357-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-357-kapak-alla-8b746e9f-2fc7-4b14-bb16-ae766659a55e.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 356,
+      "date": "Mayıs 2023",
+      "title": "356.SAYI, Mayıs 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/356-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-356-kapak-kura-e504ffe7-3dbe-49c9-bfe9-f3afaab8dd05.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 355,
+      "date": "Nisan 2023",
+      "title": "355.SAYI, Nisan 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/355-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-355-kapak-kals-500d4cb0-f60a-4985-b2a1-22fea89bcc1a.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 354,
+      "date": "Mart 2023",
+      "title": "354.SAYI, Mart 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/354-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-354-kapak-mill-9a885d70-6b90-4b22-8c0f-eb0ee611e899.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 353,
+      "date": "Şubat 2023",
+      "title": "353.SAYI, Şubat 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/353-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-353-kapak-sils-3dade692-e294-4605-8022-5beeb45d1bb7.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 352,
+      "date": "Ocak 2023",
+      "title": "352.SAYI, Ocak 2023",
+      "url": "https://www.hakikat.com/hakikat-dergisi/352-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-352-kapak-ahir-1e920532-969e-4913-9579-e7330980c50a.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 351,
+      "date": "Aralık 2022",
+      "title": "351.SAYI, Aralık 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/351-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-351-kapak-ahir-e0fea407-e23a-4df0-b98d-a57f35997c84.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 350,
+      "date": "Kasım 2022",
+      "title": "350.SAYI, Kasım 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/350-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-350-kapak-dege-49bb333f-18ce-446b-8505-36cb286202c9.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 349,
+      "date": "Ekim 2022",
+      "title": "349.SAYI, Ekim 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/349-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-349-kapak-dini-ba35f47c-9e9b-4201-a15f-3b8448a7b879.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 347,
+      "date": "Ağustos 2022",
+      "title": "347.SAYI, Ağustos 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/347-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-347-kapak-boyn-77f3e415-e785-431d-8268-41e2a9728086.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 346,
+      "date": "Temmuz 2022",
+      "title": "346.SAYI, Temmuz 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/346-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-346-kapak-o-pe-584f5b8d-9a6e-4920-8d1c-059159036e3c.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 345,
+      "date": "Haziran 2022",
+      "title": "345.SAYI, Haziran 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/345-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-345-kapak-onum-e7801499-2eb1-4dd8-adcd-81ae37fdc20a.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 344,
+      "date": "Mayıs 2022",
+      "title": "344.SAYI, Mayıs 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/344-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-344-kapak-tevh-78c5ced8-0d62-499e-8552-2b9b4953c459.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 343,
+      "date": "Nisan 2022",
+      "title": "343.SAYI, Nisan 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/343-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-343-kapak-212329f4-6fc8-4ee5-a435-3417c5805dff.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 342,
+      "date": "Mart 2022",
+      "title": "342.SAYI, Mart 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/342-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-342-kapak-duny-d43b8b32-1a68-4d56-b8eb-33e2155ab235.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 341,
+      "date": "Şubat 2022",
+      "title": "341.SAYI, Şubat 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/341-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-341-kapak-hakk-6e3d62f7-21d9-4f9e-95f1-aa9b82b627c4.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 340,
+      "date": "Ocak 2022",
+      "title": "340.SAYI, Ocak 2022",
+      "url": "https://www.hakikat.com/hakikat-dergisi/340-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-340-kapak-bile-b54973f4-f33c-428c-b4cb-1ef73fd7925c.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 339,
+      "date": "Aralık 2021",
+      "title": "339.SAYI, Aralık 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/339-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-339-kapak-kiya-1f5415c7-18c6-4023-94ee-2f4fc0a1554a.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 338,
+      "date": "Kasım 2021",
+      "title": "338.SAYI, Kasım 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/338-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-338-kapak-yuna-04f7a4ef-df5f-49bc-b257-7a909f4eae2d.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 337,
+      "date": "Ekim 2021",
+      "title": "337.SAYI, Ekim 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/337-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-337-kapak-hikm-bae82fde-df23-481e-9f34-4d6a1267305a.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 335,
+      "date": "Ağustos 2021",
+      "title": "335.SAYI, Ağustos 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/335-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-335-dergi-goog-d7b3cf62-824e-4b5a-98a0-89d29339441f.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 334,
+      "date": "Temmuz 2021",
+      "title": "334.SAYI, Temmuz 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/334-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-334-kapak-ebed-16f4b91b-752f-49e0-8f4a-0ca9fc017ed0.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 333,
+      "date": "Haziran 2021",
+      "title": "333.SAYI, Haziran 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/333-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-333-kapak-64f87617-5df3-42eb-bab5-0e5d5ac64a2c.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 332,
+      "date": "Mayıs 2021",
+      "title": "332.SAYI, Mayıs 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/332-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-332-kapak-hakk-fab75870-0302-4267-85e7-e9ebb0401207.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 331,
+      "date": "Nisan 2021",
+      "title": "331.SAYI, Nisan 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/331-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-331-google-ima-4fe87791-0015-4364-98c2-1082cc60534c.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 330,
+      "date": "Mart 2021",
+      "title": "330.SAYI, Mart 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/330-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-330-kapak-37b96518-e76c-4169-985d-b6f815f937b0.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 329,
+      "date": "Şubat 2021",
+      "title": "329.SAYI, Şubat 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/329-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-329-kapak-en-y-dded963e-0335-4297-9826-819aafc7cd8b.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 328,
+      "date": "Ocak 2021",
+      "title": "328.SAYI, Ocak 2021",
+      "url": "https://www.hakikat.com/hakikat-dergisi/328-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-328-kapak-48ee875a-0eab-455f-ae25-5f02564ff2b6.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 327,
+      "date": "Aralık 2020",
+      "title": "327.SAYI, Aralık 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/327-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-327-kapak-2c9ff833-df1b-4ca7-acf5-2ba0da6e33f1.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 326,
+      "date": "Kasım 2020",
+      "title": "326.SAYI, Kasım 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/326-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-326-kapak-eb4d666f-0b31-49c7-8b9f-152b3513336d.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 325,
+      "date": "Ekim 2020",
+      "title": "325.SAYI, Ekim 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/325-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-325-kapak-hz-a-9a63e008-ad67-4fe9-a759-e7f4668b06ae.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 323,
+      "date": "Ağustos 2020",
+      "title": "323.SAYI, Ağustos 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/323-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-323-imaj-71701bb3-903d-45e4-88e9-1c677ef858d4.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 322,
+      "date": "Temmuz 2020",
+      "title": "322.SAYI, Temmuz 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/322-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-322-kapak-bb4b2293-80a9-4796-89b8-80a93db66450.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 321,
+      "date": "Haziran 2020",
+      "title": "321.SAYI, Haziran 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/321-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-321-kapak-cc0c78ab-475e-4331-b997-4f73e969a780.jpg?width=570&height=789&mode=crop&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 320,
+      "date": "Mayıs 2020",
+      "title": "320.SAYI, Mayıs 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/320-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-320-09d9d335-1ade-491e-b14e-c1f2bd1a74aa.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 319,
+      "date": "Nisan 2020",
+      "title": "319.SAYI, Nisan 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/319-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-319-40a14961-a438-479c-bdc1-c14d4c02e79c.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 318,
+      "date": "Mart 2020",
+      "title": "318.SAYI, Mart 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/318-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 317,
+      "date": "Şubat 2020",
+      "title": "317.SAYI, Şubat 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/317-sayi",
+      "cover": "https://www.hakikat.com/Upload/Dosyalar/resim-jpg/hakikat-dergisi-317-sayi-adb1662e-058e-4aa0-a621-66255627e069.jpg?width=400&format=webx&quality=80",
+      "topics": []
+    },
+    {
+      "no": 316,
+      "date": "Ocak 2020",
+      "title": "316.SAYI, Ocak 2020",
+      "url": "https://www.hakikat.com/hakikat-dergisi/316-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 315,
+      "date": "Aralık 2019",
+      "title": "315.SAYI, Aralık 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/315-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 314,
+      "date": "Kasım 2019",
+      "title": "314.SAYI, Kasım 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/314-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 313,
+      "date": "Ekim 2019",
+      "title": "313.SAYI, Ekim 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/313-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 311,
+      "date": "Ağustos 2019",
+      "title": "311.SAYI, Ağustos 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/311-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 310,
+      "date": "Temmuz 2019",
+      "title": "310.SAYI, Temmuz 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/310-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 309,
+      "date": "Haziran 2019",
+      "title": "309.SAYI, Haziran 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/309-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 308,
+      "date": "Mayıs 2019",
+      "title": "308.SAYI, Mayıs 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/308-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 307,
+      "date": "Nisan 2019",
+      "title": "307.SAYI, Nisan 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/307-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 306,
+      "date": "Mart 2019",
+      "title": "306.SAYI, Mart 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/306-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 305,
+      "date": "Şubat 2019",
+      "title": "305.SAYI, Şubat 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/305-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 304,
+      "date": "Ocak 2019",
+      "title": "304.SAYI, Ocak 2019",
+      "url": "https://www.hakikat.com/hakikat-dergisi/304-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 303,
+      "date": "Aralık 2018",
+      "title": "303.SAYI, Aralık 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/303-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 302,
+      "date": "Kasım 2018",
+      "title": "302.SAYI, Kasım 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/302-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 301,
+      "date": "Ekim 2018",
+      "title": "301.SAYI, Ekim 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/301-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 298,
+      "date": "Temmuz 2018",
+      "title": "298.SAYI, Temmuz 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/298-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 297,
+      "date": "Haziran 2018",
+      "title": "297.SAYI, Haziran 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/297-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 296,
+      "date": "Mayıs 2018",
+      "title": "296.SAYI, Mayıs 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/296-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 295,
+      "date": "Nisan 2018",
+      "title": "295.SAYI, Nisan 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/295-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 294,
+      "date": "Mart 2018",
+      "title": "294.SAYI, Mart 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/294-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 293,
+      "date": "Şubat 2018",
+      "title": "293.SAYI, Şubat 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/293-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 292,
+      "date": "Ocak 2018",
+      "title": "292.SAYI, Ocak 2018",
+      "url": "https://www.hakikat.com/hakikat-dergisi/292-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 291,
+      "date": "Aralık 2017",
+      "title": "291.SAYI, Aralık 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/291-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 290,
+      "date": "Kasım 2017",
+      "title": "290.SAYI, Kasım 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/290-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 289,
+      "date": "Ekim 2017",
+      "title": "289.SAYI, Ekim 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/289-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 287,
+      "date": "Ağustos 2017",
+      "title": "287.SAYI, Ağustos 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/287-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 286,
+      "date": "Temmuz 2017",
+      "title": "286.SAYI, Temmuz 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/286-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 285,
+      "date": "Haziran 2017",
+      "title": "285.SAYI, Haziran 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/285-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 284,
+      "date": "Mayıs 2017",
+      "title": "284.SAYI, Mayıs 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/284-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 283,
+      "date": "Nisan 2017",
+      "title": "283.SAYI, Nisan 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/283-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 282,
+      "date": "Mart 2017",
+      "title": "282.SAYI, Mart 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/282-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 281,
+      "date": "Şubat 2017",
+      "title": "281.SAYI, Şubat 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/281-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 280,
+      "date": "Ocak 2017",
+      "title": "280.SAYI, Ocak 2017",
+      "url": "https://www.hakikat.com/hakikat-dergisi/280-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 279,
+      "date": "Aralık 2016",
+      "title": "279.SAYI, Aralık 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/279-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 278,
+      "date": "Kasım 2016",
+      "title": "278.SAYI, Kasım 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/278-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 277,
+      "date": "Ekim 2016",
+      "title": "277.SAYI, Ekim 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/277-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 275,
+      "date": "Ağustos 2016",
+      "title": "275.SAYI, Ağustos 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/275-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 274,
+      "date": "Temmuz 2016",
+      "title": "274.SAYI, Temmuz 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/274-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 273,
+      "date": "Haziran 2016",
+      "title": "273.SAYI, Haziran 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/273-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 272,
+      "date": "Mayıs 2016",
+      "title": "272.SAYI, Mayıs 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/272-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 271,
+      "date": "Nisan 2016",
+      "title": "271.SAYI, Nisan 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/271-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 270,
+      "date": "Mart 2016",
+      "title": "270.SAYI, Mart 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/270-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 269,
+      "date": "Şubat 2016",
+      "title": "269.SAYI, Şubat 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/269-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 268,
+      "date": "Ocak 2016",
+      "title": "268.SAYI, Ocak 2016",
+      "url": "https://www.hakikat.com/hakikat-dergisi/268-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 267,
+      "date": "Aralık 2015",
+      "title": "267.SAYI, Aralık 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/267-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 266,
+      "date": "Kasım 2015",
+      "title": "266.SAYI, Kasım 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/266-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 265,
+      "date": "Ekim 2015",
+      "title": "265.SAYI, Ekim 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/265-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 263,
+      "date": "Ağustos 2015",
+      "title": "263.SAYI, Ağustos 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/263-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 262,
+      "date": "Temmuz 2015",
+      "title": "262.SAYI, Temmuz 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/262-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 261,
+      "date": "Haziran 2015",
+      "title": "261.SAYI, Haziran 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/261-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 260,
+      "date": "Mayıs 2015",
+      "title": "260.SAYI, Mayıs 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/260-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 259,
+      "date": "Nisan 2015",
+      "title": "259.SAYI, Nisan 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/259-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 258,
+      "date": "Mart 2015",
+      "title": "258.SAYI, Mart 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/258-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 257,
+      "date": "Şubat 2015",
+      "title": "257.SAYI, Şubat 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/257-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 256,
+      "date": "Ocak 2015",
+      "title": "256.SAYI, Ocak 2015",
+      "url": "https://www.hakikat.com/hakikat-dergisi/256-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 255,
+      "date": "Aralık 2014",
+      "title": "255.SAYI, Aralık 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/255-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 254,
+      "date": "Kasım 2014",
+      "title": "254.SAYI, Kasım 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/254-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 253,
+      "date": "Ekim 2014",
+      "title": "253.SAYI, Ekim 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/253-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 251,
+      "date": "Ağustos 2014",
+      "title": "251.SAYI, Ağustos 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/251-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 250,
+      "date": "Temmuz 2014",
+      "title": "250.SAYI, Temmuz 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/250-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 249,
+      "date": "Haziran 2014",
+      "title": "249.SAYI, Haziran 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/249-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 248,
+      "date": "Mayıs 2014",
+      "title": "248.SAYI, Mayıs 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/248-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 247,
+      "date": "Nisan 2014",
+      "title": "247.SAYI, Nisan 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/247-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 246,
+      "date": "Mart 2014",
+      "title": "246.SAYI, Mart 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/246-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 245,
+      "date": "Şubat 2014",
+      "title": "245.SAYI, Şubat 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/245-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 244,
+      "date": "Ocak 2014",
+      "title": "244.SAYI, Ocak 2014",
+      "url": "https://www.hakikat.com/hakikat-dergisi/244-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 243,
+      "date": "Aralık 2013",
+      "title": "243.SAYI, Aralık 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/243-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 242,
+      "date": "Kasım 2013",
+      "title": "242.SAYI, Kasım 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/242-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 241,
+      "date": "Ekim 2013",
+      "title": "241.SAYI, Ekim 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/241-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 239,
+      "date": "Ağustos 2013",
+      "title": "239.SAYI, Ağustos 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/239-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 238,
+      "date": "Temmuz 2013",
+      "title": "238.SAYI, Temmuz 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/238-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 237,
+      "date": "Haziran 2013",
+      "title": "237.SAYI, Haziran 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/237-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 236,
+      "date": "Mayıs 2013",
+      "title": "236.SAYI, Mayıs 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/236-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 235,
+      "date": "Nisan 2013",
+      "title": "235.SAYI, Nisan 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/235-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 234,
+      "date": "Mart 2013",
+      "title": "234.SAYI, Mart 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/234-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 233,
+      "date": "Şubat 2013",
+      "title": "233.SAYI, Şubat 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/233-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 232,
+      "date": "Ocak 2013",
+      "title": "232.SAYI, Ocak 2013",
+      "url": "https://www.hakikat.com/hakikat-dergisi/232-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 231,
+      "date": "Aralık 2012",
+      "title": "231.SAYI, Aralık 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/231-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 230,
+      "date": "Kasım 2012",
+      "title": "230.SAYI, Kasım 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/230-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 229,
+      "date": "Ekim 2012",
+      "title": "229.SAYI, Ekim 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/229-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 227,
+      "date": "Ağustos 2012",
+      "title": "227.SAYI, Ağustos 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/227-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 226,
+      "date": "Temmuz 2012",
+      "title": "226.SAYI, Temmuz 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/226-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 225,
+      "date": "Haziran 2012",
+      "title": "225.SAYI, Haziran 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/225-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 224,
+      "date": "Mayıs 2012",
+      "title": "224.SAYI, Mayıs 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/224-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 223,
+      "date": "Nisan 2012",
+      "title": "223.SAYI, Nisan 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/223-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 222,
+      "date": "Mart 2012",
+      "title": "222.SAYI, Mart 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/222-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 221,
+      "date": "Şubat 2012",
+      "title": "221.SAYI, Şubat 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/221-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 220,
+      "date": "Ocak 2012",
+      "title": "220.SAYI, Ocak 2012",
+      "url": "https://www.hakikat.com/hakikat-dergisi/220-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 219,
+      "date": "Aralık 2011",
+      "title": "219.SAYI, Aralık 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/219-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 218,
+      "date": "Kasım 2011",
+      "title": "218.SAYI, Kasım 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/218-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 217,
+      "date": "Ekim 2011",
+      "title": "217.SAYI, Ekim 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/217-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 215,
+      "date": "Ağustos 2011",
+      "title": "215.SAYI, Ağustos 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/215-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 214,
+      "date": "Temmuz 2011",
+      "title": "214.SAYI, Temmuz 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/214-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 213,
+      "date": "Haziran 2011",
+      "title": "213.SAYI, Haziran 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/213-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 212,
+      "date": "Mayıs 2011",
+      "title": "212.SAYI, Mayıs 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/212-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 211,
+      "date": "Nisan 2011",
+      "title": "211.SAYI, Nisan 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/211-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 210,
+      "date": "Mart 2011",
+      "title": "210.SAYI, Mart 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/210-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 209,
+      "date": "Şubat 2011",
+      "title": "209.SAYI, Şubat 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/209-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 208,
+      "date": "Ocak 2011",
+      "title": "208.SAYI, Ocak 2011",
+      "url": "https://www.hakikat.com/hakikat-dergisi/208-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 207,
+      "date": "Aralık 2010",
+      "title": "207.SAYI, Aralık 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/207-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 206,
+      "date": "Kasım 2010",
+      "title": "206.SAYI, Kasım 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/206-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 205,
+      "date": "Ekim 2010",
+      "title": "205.SAYI, Ekim 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/205-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 203,
+      "date": "Ağustos 2010",
+      "title": "203.SAYI, Ağustos 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/203-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 202,
+      "date": "Temmuz 2010",
+      "title": "202.SAYI, Temmuz 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/202-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 201,
+      "date": "Haziran 2010",
+      "title": "201.SAYI, Haziran 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/201-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 200,
+      "date": "Mayıs 2010",
+      "title": "200.SAYI, Mayıs 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/200-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 199,
+      "date": "Nisan 2010",
+      "title": "199.SAYI, Nisan 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/199-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 198,
+      "date": "Mart 2010",
+      "title": "198.SAYI, Mart 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/198-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 197,
+      "date": "Şubat 2010",
+      "title": "197.SAYI, Şubat 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/197-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 196,
+      "date": "Ocak 2010",
+      "title": "196.SAYI, Ocak 2010",
+      "url": "https://www.hakikat.com/hakikat-dergisi/196-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 195,
+      "date": "Aralık 2009",
+      "title": "195.SAYI, Aralık 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/195-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 194,
+      "date": "Kasım 2009",
+      "title": "194.SAYI, Kasım 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/194-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 193,
+      "date": "Ekim 2009",
+      "title": "193.SAYI, Ekim 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/193-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 191,
+      "date": "Ağustos 2009",
+      "title": "191.SAYI, Ağustos 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/191-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 190,
+      "date": "Temmuz 2009",
+      "title": "190.SAYI, Temmuz 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/190-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 189,
+      "date": "Haziran 2009",
+      "title": "189.SAYI, Haziran 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/189-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 188,
+      "date": "Mayıs 2009",
+      "title": "188.SAYI, Mayıs 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/188-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 187,
+      "date": "Nisan 2009",
+      "title": "187.SAYI, Nisan 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/187-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 186,
+      "date": "Mart 2009",
+      "title": "186.SAYI, Mart 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/186-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 185,
+      "date": "Şubat 2009",
+      "title": "185.SAYI, Şubat 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/185-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 184,
+      "date": "Ocak 2009",
+      "title": "184.SAYI, Ocak 2009",
+      "url": "https://www.hakikat.com/hakikat-dergisi/184-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 183,
+      "date": "Aralık 2008",
+      "title": "183.SAYI, Aralık 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/183-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 182,
+      "date": "Kasım 2008",
+      "title": "182.SAYI, Kasım 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/182-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 181,
+      "date": "Ekim 2008",
+      "title": "181.SAYI, Ekim 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/181-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 179,
+      "date": "Ağustos 2008",
+      "title": "179.SAYI, Ağustos 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/179-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 178,
+      "date": "Temmuz 2008",
+      "title": "178.SAYI, Temmuz 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/178-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 177,
+      "date": "Haziran 2008",
+      "title": "177.SAYI, Haziran 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/177-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 176,
+      "date": "Mayıs 2008",
+      "title": "176.SAYI, Mayıs 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/176-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 175,
+      "date": "Nisan 2008",
+      "title": "175.SAYI, Nisan 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/175-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 174,
+      "date": "Mart 2008",
+      "title": "174.SAYI, Mart 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/174-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 173,
+      "date": "Şubat 2008",
+      "title": "173.SAYI, Şubat 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/173-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 172,
+      "date": "Ocak 2008",
+      "title": "172.SAYI, Ocak 2008",
+      "url": "https://www.hakikat.com/hakikat-dergisi/172-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 171,
+      "date": "Aralık 2007",
+      "title": "171.SAYI, Aralık 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/171-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 170,
+      "date": "Kasım 2007",
+      "title": "170.SAYI, Kasım 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/170-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 169,
+      "date": "Ekim 2007",
+      "title": "169.SAYI, Ekim 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/169-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 167,
+      "date": "Ağustos 2007",
+      "title": "167.SAYI, Ağustos 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/167-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 166,
+      "date": "Temmuz 2007",
+      "title": "166.SAYI, Temmuz 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/166-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 165,
+      "date": "Haziran 2007",
+      "title": "165.SAYI, Haziran 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/165-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 164,
+      "date": "Mayıs 2007",
+      "title": "164.SAYI, Mayıs 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/164-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 163,
+      "date": "Nisan 2007",
+      "title": "163.SAYI, Nisan 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/163-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 162,
+      "date": "Mart 2007",
+      "title": "162.SAYI, Mart 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/162-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 161,
+      "date": "Şubat 2007",
+      "title": "161.SAYI, Şubat 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/161-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 160,
+      "date": "Ocak 2007",
+      "title": "160.SAYI, Ocak 2007",
+      "url": "https://www.hakikat.com/hakikat-dergisi/160-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 159,
+      "date": "Aralık 2006",
+      "title": "159.SAYI, Aralık 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/159-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 158,
+      "date": "Kasım 2006",
+      "title": "158.SAYI, Kasım 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/158-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 157,
+      "date": "Ekim 2006",
+      "title": "157.SAYI, Ekim 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/157-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 155,
+      "date": "Ağustos 2006",
+      "title": "155.SAYI, Ağustos 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/155-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 154,
+      "date": "Temmuz 2006",
+      "title": "154.SAYI, Temmuz 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/154-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 153,
+      "date": "Haziran 2006",
+      "title": "153.SAYI, Haziran 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/153-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 152,
+      "date": "Mayıs 2006",
+      "title": "152.SAYI, Mayıs 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/152-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 151,
+      "date": "Nisan 2006",
+      "title": "151.SAYI, Nisan 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/151-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 150,
+      "date": "Mart 2006",
+      "title": "150.SAYI, Mart 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/150-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 149,
+      "date": "Şubat 2006",
+      "title": "149.SAYI, Şubat 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/149-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 148,
+      "date": "Ocak 2006",
+      "title": "148.SAYI, Ocak 2006",
+      "url": "https://www.hakikat.com/hakikat-dergisi/148-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 147,
+      "date": "Aralık 2005",
+      "title": "147.SAYI, Aralık 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/147-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 146,
+      "date": "Kasım 2005",
+      "title": "146.SAYI, Kasım 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/146-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 145,
+      "date": "Ekim 2005",
+      "title": "145.SAYI, Ekim 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/145-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 143,
+      "date": "Ağustos 2005",
+      "title": "143.SAYI, Ağustos 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/143-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 142,
+      "date": "Temmuz 2005",
+      "title": "142.SAYI, Temmuz 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/142-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 141,
+      "date": "Haziran 2005",
+      "title": "141.SAYI, Haziran 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/141-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 140,
+      "date": "Mayıs 2005",
+      "title": "140.SAYI, Mayıs 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/140-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 139,
+      "date": "Nisan 2005",
+      "title": "139.SAYI, Nisan 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/139-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 138,
+      "date": "Mart 2005",
+      "title": "138.SAYI, Mart 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/138-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 137,
+      "date": "Şubat 2005",
+      "title": "137.SAYI, Şubat 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/137-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 136,
+      "date": "Ocak 2005",
+      "title": "136.SAYI, Ocak 2005",
+      "url": "https://www.hakikat.com/hakikat-dergisi/136-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 135,
+      "date": "Aralık 2004",
+      "title": "135.SAYI, Aralık 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/135-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 134,
+      "date": "Kasım 2004",
+      "title": "134.SAYI, Kasım 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/134-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 133,
+      "date": "Ekim 2004",
+      "title": "133.SAYI, Ekim 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/133-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 131,
+      "date": "Ağustos 2004",
+      "title": "131.SAYI, Ağustos 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/131-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 130,
+      "date": "Temmuz 2004",
+      "title": "130.SAYI, Temmuz 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/130-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 129,
+      "date": "Haziran 2004",
+      "title": "129.SAYI, Haziran 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/129-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 128,
+      "date": "Mayıs 2004",
+      "title": "128.SAYI, Mayıs 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/128-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 127,
+      "date": "Nisan 2004",
+      "title": "127.SAYI, Nisan 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/127-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 126,
+      "date": "Mart 2004",
+      "title": "126.SAYI, Mart 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/126-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 125,
+      "date": "Şubat 2004",
+      "title": "125.SAYI, Şubat 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/125-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 124,
+      "date": "Ocak 2004",
+      "title": "124.SAYI, Ocak 2004",
+      "url": "https://www.hakikat.com/hakikat-dergisi/124-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 123,
+      "date": "Aralık 2003",
+      "title": "123.SAYI, Aralık 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/123-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 122,
+      "date": "Kasım 2003",
+      "title": "122.SAYI, Kasım 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/122-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 121,
+      "date": "Ekim 2003",
+      "title": "121.SAYI, Ekim 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/121-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 119,
+      "date": "Ağustos 2003",
+      "title": "119.SAYI, Ağustos 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/119-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 118,
+      "date": "Temmuz 2003",
+      "title": "118.SAYI, Temmuz 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/118-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 117,
+      "date": "Haziran 2003",
+      "title": "117.SAYI, Haziran 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/117-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 116,
+      "date": "Mayıs 2003",
+      "title": "116.SAYI, Mayıs 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/116-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 115,
+      "date": "Nisan 2003",
+      "title": "115.SAYI, Nisan 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/115-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 114,
+      "date": "Mart 2003",
+      "title": "114.SAYI, Mart 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/114-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 113,
+      "date": "Şubat 2003",
+      "title": "113.SAYI, Şubat 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/113-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 112,
+      "date": "Ocak 2003",
+      "title": "112.SAYI, Ocak 2003",
+      "url": "https://www.hakikat.com/hakikat-dergisi/112-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 111,
+      "date": "Aralık 2002",
+      "title": "111.SAYI, Aralık 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/111-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 110,
+      "date": "Kasım 2002",
+      "title": "110.SAYI, Kasım 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/110-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 109,
+      "date": "Ekim 2002",
+      "title": "109.SAYI, Ekim 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/109-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 107,
+      "date": "Ağustos 2002",
+      "title": "107.SAYI, Ağustos 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/107-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 106,
+      "date": "Temmuz 2002",
+      "title": "106.SAYI, Temmuz 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/106-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 105,
+      "date": "Haziran 2002",
+      "title": "105.SAYI, Haziran 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/105-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 104,
+      "date": "Mayıs 2002",
+      "title": "104.SAYI, Mayıs 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/104-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 103,
+      "date": "Nisan 2002",
+      "title": "103.SAYI, Nisan 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/103-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 102,
+      "date": "Mart 2002",
+      "title": "102.SAYI, Mart 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/102-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 101,
+      "date": "Şubat 2002",
+      "title": "101.SAYI, Şubat 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/101-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 100,
+      "date": "Ocak 2002",
+      "title": "100.SAYI, Ocak 2002",
+      "url": "https://www.hakikat.com/hakikat-dergisi/100-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 99,
+      "date": "Aralık 2001",
+      "title": "99.SAYI, Aralık 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/99-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 98,
+      "date": "Kasım 2001",
+      "title": "98.SAYI, Kasım 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/98-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 97,
+      "date": "Ekim 2001",
+      "title": "97.SAYI, Ekim 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/97-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 95,
+      "date": "Ağustos 2001",
+      "title": "95.SAYI, Ağustos 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/95-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 94,
+      "date": "Temmuz 2001",
+      "title": "94.SAYI, Temmuz 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/94-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 93,
+      "date": "Haziran 2001",
+      "title": "93.SAYI, Haziran 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/93-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 92,
+      "date": "Mayıs 2001",
+      "title": "92.SAYI, Mayıs 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/92-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 91,
+      "date": "Nisan 2001",
+      "title": "91.SAYI, Nisan 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/91-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 90,
+      "date": "Mart 2001",
+      "title": "90.SAYI, Mart 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/90-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 89,
+      "date": "Şubat 2001",
+      "title": "89.SAYI, Şubat 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/89-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 88,
+      "date": "Ocak 2001",
+      "title": "88.SAYI, Ocak 2001",
+      "url": "https://www.hakikat.com/hakikat-dergisi/88-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 87,
+      "date": "Aralık 2000",
+      "title": "87.SAYI, Aralık 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/87-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 86,
+      "date": "Kasım 2000",
+      "title": "86.SAYI, Kasım 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/86-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 85,
+      "date": "Ekim 2000",
+      "title": "85.SAYI, Ekim 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/85-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 83,
+      "date": "Ağustos 2000",
+      "title": "83.SAYI, Ağustos 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/83-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 82,
+      "date": "Temmuz 2000",
+      "title": "82.SAYI, Temmuz 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/82-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 81,
+      "date": "Haziran 2000",
+      "title": "81.SAYI, Haziran 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/81-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 80,
+      "date": "Mayıs 2000",
+      "title": "80.SAYI, Mayıs 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/80-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 79,
+      "date": "Nisan 2000",
+      "title": "79.SAYI, Nisan 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/79-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 78,
+      "date": "Mart 2000",
+      "title": "78.SAYI, Mart 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/78-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 77,
+      "date": "Şubat 2000",
+      "title": "77.SAYI, Şubat 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/77-sayi",
+      "cover": "",
+      "topics": []
+    },
+    {
+      "no": 76,
+      "date": "Ocak 2000",
+      "title": "76.SAYI, Ocak 2000",
+      "url": "https://www.hakikat.com/hakikat-dergisi/76-sayi",
+      "cover": "",
+      "topics": []
+    }
   ]
 }
