@@ -1,0 +1,27 @@
+name: Hakikat verisini güncelle
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo indir
+        uses: actions/checkout@v4
+      - name: Node kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Hakikat verisini çek
+        run: node scripts/build-hakikat-data.mjs
+      - name: Değişiklikleri kaydet
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Hakikat dergi verisini güncelle'
+          file_pattern: data/index.json
