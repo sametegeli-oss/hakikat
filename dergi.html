@@ -233,16 +233,16 @@ function openNote(i=state.idx){if(!state.issue||!state.sentences.length)return;l
 function saveCurrentNote(i){let key=currentKey(i);let txt=$('noteText').value.trim();if(!txt){delete state.notes[key]}else{state.notes[key]={key,no:state.issue.no,date:state.issue.date,title:state.issue.title||'',idx:i,text:state.sentences[i],note:txt,at:Date.now()}}saveNotes();closeModal();renderContent();toast('Not kaydedildi.')}
 function deleteCurrentNote(i){let key=currentKey(i);delete state.notes[key];saveNotes();closeModal();renderContent();toast('Not silindi.')}
 function jumpSentence(i){if(!state.sentences.length)return;state.idx=i;renderContent()}
-async function openIssueAtSentence(no,idx){
-  closeModal();
-  stop();
-  let issue=state.issues.find(x=>Number(x.no)===Number(no));
-  if(!issue){toast('Sayı bulunamadı: '+no);return}
+async function openIssueAtSentence(no,idx,articleIndex=0){
   try{
+    let issue=state.issues.find(x=>Number(x.no)===Number(no));
+    if(!issue) throw new Error('Sayı bulunamadı');
+    issue.contentFile=issue.contentFile||('data/'+issue.no+'.json');
     await loadIssueJson(issue);
+    stop();
     state.issue=issue;
-    state.article=0;
-    const a=(issue.articles&&issue.articles[0])?issue.articles[0]:{title:issue.title||'',text:''};
+    state.article=Math.max(0,Math.min(Number(articleIndex)||0,(issue.articles||[]).length-1));
+    const a=(issue.articles&&issue.articles[state.article])?issue.articles[state.article]:{title:issue.title||'',text:''};
     a.title=normalizeTurkishText(a.title||'');
     a.text=normalizeTurkishText(a.text||'');
     state.sentences=splitSentences(a.text);
@@ -254,50 +254,93 @@ async function openIssueAtSentence(no,idx){
     renderContent();
     showReaderScreen();
     saveProgress();
+    closeModal();
     toast(`${issue.no}. sayı, ${state.idx+1}. cümle açıldı.`);
   }catch(e){
     toast('Cümle açılamadı: '+(e.message||e));
   }
 }
 async function goToSaved(no,idx){await openIssueAtSentence(no,idx)}
-async function goToSearchResult(no,idx){await openIssueAtSentence(no,idx)}
+async function goToSearchResult(no,idx,articleIndex=0){await openIssueAtSentence(no,idx,articleIndex)}
 function showFavorites(){let vals=Object.values(state.favorites||{}).sort((a,b)=>(b.at||0)-(a.at||0));if(!vals.length){showModal('Favoriler','<p>Henüz favori yok.</p>');return}showModal('Favoriler',`<p class="miniInfo">Yıldızladığınız cümleler. Git düğmesi ilgili sayı ve cümleyi açar.</p>`+vals.map(x=>`<div class="modalItem"><b>${x.no}. SAYI, ${esc(x.date)} — ${x.idx+1}. cümle</b><small>${esc(x.title)}</small><p>${esc(x.text)}</p><div class="actionLine"><button class="btn small play" onclick="goToSaved(${x.no},${x.idx})">Git</button><button class="btn small ghost" onclick="removeFavoriteKey('${x.key}')">Favoriden çıkar</button></div></div>`).join(''))}
 function removeFavoriteKey(key){delete state.favorites[key];saveFavorites();showFavorites();toast('Favoriden çıkarıldı.')}
 function showNotes(){let vals=Object.values(state.notes||{}).sort((a,b)=>(b.at||0)-(a.at||0));if(!vals.length){showModal('Notlar','<p>Henüz not yok.</p>');return}showModal('Notlar',`<p class="miniInfo">Tüm notlarınız burada. Git düğmesi ilgili cümleyi açar.</p>`+vals.map(x=>`<div class="modalItem"><b>${x.no}. SAYI, ${esc(x.date)} — ${x.idx+1}. cümle</b><small>${esc(x.title)}</small><p>${esc(x.text)}</p><p><b>Not:</b> ${esc(x.note)}</p><div class="actionLine"><button class="btn small play" onclick="goToSaved(${x.no},${x.idx})">Git</button><button class="btn small ghost" onclick="removeNoteKey('${x.key}')">Notu Sil</button></div></div>`).join(''))}
 function removeNoteKey(key){delete state.notes[key];saveNotes();showNotes();toast('Not silindi.')}
-function showArchiveSearch(){showModal('Tüm Dergilerde Ara',`<div class="searchBox"><input id="archiveTerm" class="inp" placeholder="Örn: zikir, namaz, sabır..." onkeydown="if(event.key==='Enter')runArchiveSearch()"><button class="btn play" onclick="runArchiveSearch()">Ara</button></div><div class="row" style="margin-bottom:10px"><select id="searchScope" class="sel"><option value="all">Tüm metinde ara</option><option value="title">Sadece başlıklarda ara</option><option value="body">Sadece cümlelerde ara</option><option value="fav">Favorilerde ara</option><option value="notes">Notlarda ara</option></select><select id="searchStatusFilter" class="sel"><option value="all">Tüm sayılar</option><option value="unread">Okunmamış sayılar</option><option value="partial">Yarım kalanlar</option><option value="done">Tamamlananlar</option></select></div><div id="searchStatus" class="miniInfo">Sonucun yanındaki <b>Git</b> düğmesine basınca ilgili sayı ve cümle açılır.</div><div id="searchResults"></div>`);setTimeout(()=>$('archiveTerm')&&$('archiveTerm').focus(),50)}
+function showArchiveSearch(){showModal('Tüm Dergilerde Ara',`<div class="searchBox"><input id="archiveTerm" class="inp" placeholder="Örn: zikir, namaz, kabir, sabır..." onkeydown="if(event.key==='Enter')runArchiveSearch()"><button class="btn play" onclick="runArchiveSearch()">Ara</button></div><div class="row" style="margin-bottom:10px"><select id="searchScope" class="sel"><option value="all">Tüm metinde ara</option><option value="title">Sadece başlıklarda ara</option><option value="body">Sadece cümlelerde ara</option><option value="fav">Favorilerde ara</option><option value="notes">Notlarda ara</option></select><select id="searchStatusFilter" class="sel"><option value="all">Tüm sayılar</option><option value="unread">Okunmamış sayılar</option><option value="partial">Yarım kalanlar</option><option value="done">Tamamlananlar</option></select></div><div id="searchStatus" class="miniInfo">Tüm sayılar seçiliyken program <b>data/*.json</b> dosyalarının tamamını tarar. Sonucun yanındaki <b>Git</b> düğmesi ilgili sayı ve cümleyi açar.</div><div id="searchResults"></div>`);setTimeout(()=>$('archiveTerm')&&$('archiveTerm').focus(),50)}
 function hi(text,term){let safe=esc(text);if(!term)return safe;let t=term.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');return safe.replace(new RegExp(t,'gi'),m=>`<span class="mark">${m}</span>`)}
+function issueSearchStatusOk(issue,status){let p=state.progress[String(issue.no)]||{};let pct=p.total?((p.idx+1)/p.total):0;if(status==='unread')return !p.total;if(status==='partial')return p.total&&pct<1;if(status==='done')return p.total&&pct>=1;return true}
+function getIssueSearchArticles(issue){
+  let arr=[];
+  if(issue&&Array.isArray(issue.articles)&&issue.articles.length) arr=issue.articles;
+  else if(issue&&issue.article) arr=[issue.article];
+  if(!arr.length){
+    const txt=(issue&&((issue.text||issue.raw||issue.content||issue.body)))||'';
+    if(txt) arr=[{title:(issue&&issue.title)||'',text:txt}];
+  }
+  return arr.map(a=>({title:normalizeTurkishText(a.title||(issue&&issue.title)||''),text:normalizeTurkishText(a.text||a.content||a.body||'')})).filter(a=>a.title||a.text);
+}
+async function prepareIssueForSearch(issue){
+  if(!issue) return issue;
+  issue.contentFile=issue.contentFile||('data/'+issue.no+'.json');
+  if(issue.articles&&issue.articles.length) return normalizeIssueTextFields(issue);
+  try{await loadIssueJson(issue);return normalizeIssueTextFields(issue);}catch(e1){
+    try{
+      const r=await fetch(('data/'+issue.no+'.json')+'?v='+Date.now(),{cache:'no-store'});
+      if(r.ok){const d=await r.json();Object.assign(issue,d);issue.contentFile=issue.contentFile||('data/'+issue.no+'.json');return normalizeIssueTextFields(issue);}
+    }catch(e2){}
+  }
+  return issue;
+}
+function pushSearchResult(results,item,seen){
+  const key=`${item.no}:${item.articleIndex||0}:${item.idx||0}:${String(item.text||'').slice(0,40)}`;
+  if(seen.has(key)||results.length>=500) return;
+  seen.add(key);results.push(item);
+}
 async function runArchiveSearch(){
   let term=($('archiveTerm').value||'').trim();
   if(term.length<2){$('searchStatus').textContent='En az 2 harf yazın.';return}
   let lower=normalizeForSearch(term);
   let scope=($('searchScope')&&$('searchScope').value)||'all';
   let status=($('searchStatusFilter')&&$('searchStatusFilter').value)||'all';
-  let results=[];
+  let results=[],seen=new Set(),fail=0,searched=0;
   $('searchResults').innerHTML='';
-  function statusOk(issue){let p=state.progress[String(issue.no)]||{};let pct=p.total?((p.idx+1)/p.total):0;if(status==='unread')return !p.total;if(status==='partial')return p.total&&pct<1;if(status==='done')return p.total&&pct>=1;return true}
-  if(scope==='fav'){Object.values(state.favorites||{}).forEach(x=>{if(normalizeForSearch(x.text+' '+x.title).includes(lower))results.push({...x,date:x.date||'',title:x.title||'',text:x.text||''})});}
-  else if(scope==='notes'){Object.values(state.notes||{}).forEach(x=>{if(normalizeForSearch(x.text+' '+x.title+' '+x.note).includes(lower))results.push({...x,date:x.date||'',title:x.title||'',text:(x.text||'')+' — Not: '+(x.note||'')})});}
-  else{
-    for(let n=0;n<state.issues.length;n++){
-      let issue=state.issues[n]; if(!statusOk(issue)) continue;
-      $('searchStatus').textContent=`Aranıyor: ${n+1}/${state.issues.length} — bulunan ${results.length}`;
-      try{
-        await loadIssueJson(issue);
-        let a=(issue.articles&&issue.articles[0])?issue.articles[0]:null;
-        if(!a) continue;
-        if((scope==='all'||scope==='title')&&normalizeForSearch((issue.title||'')+' '+(a.title||'')+' '+(issue.topics||[]).join(' ')).includes(lower)){
-          results.push({no:issue.no,date:issue.date,title:a.title,idx:0,text:(issue.title||a.title||'Başlık sonucu')});
-        }
-        if(scope==='all'||scope==='body'){
-          let sent=splitSentences(a.text);
-          sent.forEach((s,i)=>{if(normalizeForSearch(s).includes(lower)&&results.length<300) results.push({no:issue.no,date:issue.date,title:a.title,idx:i,text:s});});
-        }
-      }catch(e){}
-    }
+  $('searchStatus').textContent='Arama hazırlanıyor...';
+  if(scope==='fav'){
+    Object.values(state.favorites||{}).forEach(x=>{if(normalizeForSearch((x.text||'')+' '+(x.title||'')).includes(lower))pushSearchResult(results,{...x,date:x.date||'',title:x.title||'',text:x.text||'',articleIndex:0},seen)});
   }
-  results=results.slice(0,300);
-  $('searchStatus').textContent=`${results.length} sonuç gösteriliyor. Git düğmesine basınca ilgili sayı ve cümle açılır.`;
+  else if(scope==='notes'){
+    Object.values(state.notes||{}).forEach(x=>{if(normalizeForSearch((x.text||'')+' '+(x.title||'')+' '+(x.note||'')).includes(lower))pushSearchResult(results,{...x,date:x.date||'',title:x.title||'',text:(x.text||'')+' — Not: '+(x.note||''),articleIndex:0},seen)});
+  }
+  else{
+    const list=(state.issues||[]).slice();
+    for(let n=0;n<list.length;n++){
+      let issue=list[n];
+      if(!issueSearchStatusOk(issue,status)) continue;
+      searched++;
+      $('searchStatus').textContent=`Tüm arşiv taranıyor: ${n+1}/${list.length} — bulunan ${results.length}`;
+      try{
+        await prepareIssueForSearch(issue);
+        const articles=getIssueSearchArticles(issue);
+        if(!articles.length){fail++;continue;}
+        articles.forEach((a,articleIndex)=>{
+          const titleBlob=(issue.title||'')+' '+(a.title||'')+' '+((issue.topics||[]).join(' '));
+          if((scope==='all'||scope==='title')&&normalizeForSearch(titleBlob).includes(lower)){
+            pushSearchResult(results,{no:issue.no,date:issue.date,title:a.title||issue.title,idx:0,articleIndex,text:(issue.title||a.title||'Başlık sonucu')},seen);
+          }
+          if(scope==='all'||scope==='body'){
+            let sent=splitSentences(a.text||'');
+            if(!sent.length && a.text) sent=clean(a.text).split(/\n{2,}|(?<=[.!?…])\s+/).map(x=>x.trim()).filter(x=>x.length>8);
+            sent.forEach((s,i)=>{if(normalizeForSearch(s).includes(lower))pushSearchResult(results,{no:issue.no,date:issue.date,title:a.title||issue.title,idx:i,articleIndex,text:s},seen);});
+          }
+        });
+      }catch(e){fail++;}
+      if(results.length>=500) break;
+    }
+    saveLocal();
+  }
+  results=results.slice(0,500);
+  const extra=fail?` ${fail} sayı dosyası okunamadı; data klasörünün GitHub'a tam yüklendiğini kontrol edin.`:'';
+  $('searchStatus').textContent=`${results.length} sonuç gösteriliyor. ${searched?searched+' sayı tarandı. ':''}Git düğmesine basınca ilgili sayı ve cümle açılır.${extra}`;
   $('searchResults').innerHTML=results.length?results.map(r=>`
     <div class="modalItem searchResult">
       <div class="resultText">
@@ -305,9 +348,10 @@ async function runArchiveSearch(){
         <small>${esc(r.title||'')}</small>
         <p>${hi(r.text||'',term)}</p>
       </div>
-      <button class="btn small play goBtn" onclick="goToSearchResult(${r.no},${Number(r.idx)||0})">Git</button>
-    </div>`).join(''):'<p>Sonuç bulunamadı.</p>';
+      <button class="btn small play goBtn" onclick="goToSearchResult(${Number(r.no)},${Number(r.idx)||0},${Number(r.articleIndex)||0})">Git</button>
+    </div>`).join(''):'<p>Sonuç bulunamadı. Tüm sayılarda arama için <b>data/393.json, data/392.json...</b> dosyalarının GitHub’da yüklü olması gerekir.</p>';
 }
+
 
 function todayKey(){return new Date().toISOString().slice(0,10)}
 function weekKey(d){let dt=new Date(d);let onejan=new Date(dt.getFullYear(),0,1);let week=Math.ceil((((dt-onejan)/86400000)+onejan.getDay()+1)/7);return dt.getFullYear()+'-W'+week}
