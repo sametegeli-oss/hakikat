@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>DilAvatar — Yüz Yüze</title>
+  <style>
+    :root{
+      --bg:#05070d;
+      --bubble:#0f1830;
+      --bubble-border:#2dd4bf;
+      --text:#eef2ff;
+      --muted:#94a3b8;
+      --accent:#2dd4bf;
+      --send:#2563eb;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      overflow:hidden;
+    }
+
+    /* Tam ekran sahne */
+    .stage{
+      position:fixed;
+      inset:0;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* Avatar tüm ekranı kaplar */
+    .avatar-wrap{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      overflow:hidden;
+      background:
+        radial-gradient(120% 80% at 50% 0%, #0c1530 0%, #05070d 70%);
+    }
+
+    /* avatar.js'in SVG katmanı viewBox="0 0 1000 1000" (KARE) kullanır ve
+       preserveAspectRatio yoktur. Bu yüzden kutu KARE kalmalı; aksi halde
+       kaş/göz/ağız resimle hizasını kaybedip kenara kayar.
+       Çözüm: kutuyu kare tut, ekranı dolduracak kadar büyüt, taşanı kırp. */
+    #avatarHost{ width:100%; height:100%; overflow:hidden; display:grid; place-items:center; }
+    #avatarHost .da8-box{
+      width:max(100vw, 100vh) !important;
+      height:max(100vw, 100vh) !important;
+      max-width:none !important;
+      min-width:0 !important;
+      margin:0 !important;
+    }
+    #avatarHost .da8-frame{
+      width:100% !important;
+      height:100% !important;
+      aspect-ratio:1/1 !important;   /* KARE kalsın, SVG ile örtüşsün */
+      border-radius:0 !important;
+      border:0 !important;
+      box-shadow:none !important;
+      background:transparent !important;
+    }
+    #avatarHost .da8-img{
+      object-fit:cover !important;
+    }
+
+    /* Üst bilgi şeridi */
+    .topbar{
+      position:relative;
+      z-index:3;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:calc(env(safe-area-inset-top) + 14px) 18px 14px;
+      background:linear-gradient(180deg, rgba(5,7,13,.75), rgba(5,7,13,0));
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 0 rgba(45,212,191,.6);
+    }
+    .dot.live{ animation:pulse 1.4s infinite; }
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(45,212,191,.55)}
+      70%{box-shadow:0 0 0 12px rgba(45,212,191,0)}
+      100%{box-shadow:0 0 0 0 rgba(45,212,191,0)}
+    }
+    .topbar h1{font-size:16px;margin:0;font-weight:800;letter-spacing:.2px}
+    .topbar .status{font-size:12px;color:var(--muted)}
+
+    .spacer{flex:1}
+
+    /* Alt alan: konuşma balonu + kontroller */
+    .bottom{
+      position:relative;
+      z-index:3;
+      padding:0 16px calc(env(safe-area-inset-bottom) + 16px);
+      background:linear-gradient(0deg, rgba(5,7,13,.92) 35%, rgba(5,7,13,0));
+    }
+
+    /* Konuşma balonu */
+    .bubble{
+      max-width:680px;
+      margin:0 auto 14px;
+      background:var(--bubble);
+      border:1.5px solid rgba(45,212,191,.5);
+      border-radius:20px 20px 20px 6px;
+      padding:16px 18px;
+      font-size:18px;
+      line-height:1.45;
+      box-shadow:0 14px 40px rgba(0,0,0,.5);
+      position:relative;
+      min-height:30px;
+      transition:opacity .25s ease, transform .25s ease;
+    }
+    .bubble.empty{ opacity:.55; }
+    .bubble .caret{
+      display:inline-block;width:2px;height:1.1em;
+      background:var(--accent);margin-left:2px;vertical-align:-2px;
+      animation:blink 1s steps(2) infinite;
+    }
+    @keyframes blink{50%{opacity:0}}
+
+    /* Giriş + butonlar */
+    .controls{
+      max-width:680px;
+      margin:0 auto;
+      display:flex;
+      gap:10px;
+      align-items:flex-end;
+    }
+    .field{
+      flex:1;
+      display:flex;
+      background:#0b1120;
+      border:1px solid rgba(148,163,184,.3);
+      border-radius:16px;
+      overflow:hidden;
+    }
+    .field textarea{
+      flex:1;
+      resize:none;
+      border:0;
+      outline:0;
+      background:transparent;
+      color:var(--text);
+      font:inherit;
+      padding:13px 14px;
+      max-height:120px;
+      min-height:24px;
+    }
+    .field textarea::placeholder{color:var(--muted)}
+
+    button{
+      border:0;cursor:pointer;font:inherit;font-weight:800;color:#fff;
+      border-radius:16px;padding:13px 18px;
+    }
+    .btn-send{background:var(--send)}
+    .btn-send:active{transform:scale(.96)}
+    .iconbtns{display:flex;gap:8px}
+    .btn-ghost{
+      background:#101a30;color:#cbd5e1;
+      border:1px solid rgba(148,163,184,.25);
+      padding:13px 14px;
+    }
+    .btn-ghost:active{transform:scale(.96)}
+
+    .warn{
+      display:none;
+      position:fixed;inset:0;
+      place-items:center;
+      background:#020617;z-index:9;
+      padding:28px;text-align:center;
+    }
+    .warn.show{display:grid}
+    .warn .box{
+      background:#7f1d1d;color:#fff;border-radius:16px;
+      padding:22px;max-width:420px;font-weight:700;line-height:1.5;
+    }
+    code{background:rgba(0,0,0,.3);padding:2px 6px;border-radius:6px}
+
+    @media (max-width:520px){
+      .bubble{font-size:16px}
+      .btn-send{padding:13px 16px}
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="topbar">
+      <span id="dot" class="dot"></span>
+      <div>
+        <h1>İngilizce Öğretmenin</h1>
+        <div id="status" class="status">Hazır</div>
+      </div>
+      <div class="spacer"></div>
+      <button id="btnThink" class="btn-ghost" title="Düşünme animasyonu">Düşün</button>
+    </div>
+
+    <div class="avatar-wrap">
+      <div id="avatarHost"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="bottom">
+      <div id="bubble" class="bubble empty">Bir şey yazıp gönder, sana söyleyeyim.</div>
+      <div class="controls">
+        <div class="field">
+          <textarea id="input" rows="1" placeholder="Söyleyeceğim cümleyi yaz…"></textarea>
+        </div>
+        <div class="iconbtns">
+          <button id="btnStop" class="btn-ghost" title="Durdur">Dur</button>
+          <button id="btnSend" class="btn-send">Söyle</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="warn" class="warn">
+    <div class="box">
+      avatar.js yüklenemedi.<br>
+      Bu dosyayı <code>avatar.js</code> ile <b>aynı klasöre</b> koy.
+    </div>
+  </div>
+
+  <!-- avatar.js ile aynı klasörde olmalı -->
+  <script src="./avatar.js"></script>
+  <script>
+    (function(){
+      var bubble = document.getElementById("bubble");
+      var input  = document.getElementById("input");
+      var status = document.getElementById("status");
+      var dot    = document.getElementById("dot");
+
+      function setStatus(t, live){
+        status.textContent = t;
+        dot.classList.toggle("live", !!live);
+      }
+
+      // Konuşma balonunu metinle dolduran ve harf harf yazan basit yazıcı
+      var typer = null;
+      function showBubble(text){
+        if (typer) { clearInterval(typer); typer = null; }
+        bubble.classList.remove("empty");
+        bubble.textContent = "";
+        var caret = document.createElement("span");
+        caret.className = "caret";
+        bubble.appendChild(caret);
+        var i = 0;
+        typer = setInterval(function(){
+          if (i >= text.length){
+            clearInterval(typer); typer = null;
+            caret.remove();
+            return;
+          }
+          caret.insertAdjacentText("beforebegin", text[i]);
+          i++;
+        }, 35);
+      }
+
+      function speak(){
+        var text = input.value.trim();
+        if (!text) { input.focus(); return; }
+        // konuşma süresini metin uzunluğuna göre ayarla (yaklaşık)
+        var dur = Math.min(Math.max(text.length * 90, 1500), 9000);
+        showBubble(text);
+        setStatus("Konuşuyor…", true);
+        if (window.DilAvatar) {
+          DilAvatar.thinking(false);
+          DilAvatar.speakText(text, dur);
+        }
+        setTimeout(function(){ setStatus("Hazır"); }, dur);
+      }
+
+      document.getElementById("btnSend").addEventListener("click", speak);
+
+      document.getElementById("btnStop").addEventListener("click", function(){
+        if (typer){ clearInterval(typer); typer = null; }
+        if (window.DilAvatar){ DilAvatar.stop(); DilAvatar.thinking(false); }
+        setStatus("Durduruldu");
+        var c = bubble.querySelector(".caret"); if (c) c.remove();
+      });
+
+      var thinking = false;
+      document.getElementById("btnThink").addEventListener("click", function(){
+        thinking = !thinking;
+        if (window.DilAvatar) DilAvatar.thinking(thinking);
+        setStatus(thinking ? "Düşünüyor…" : "Hazır", thinking);
+      });
+
+      // Enter ile gönder (Shift+Enter = yeni satır)
+      input.addEventListener("keydown", function(e){
+        if (e.key === "Enter" && !e.shiftKey){
+          e.preventDefault();
+          speak();
+        }
+      });
+      // textarea otomatik büyüsün
+      input.addEventListener("input", function(){
+        input.style.height = "auto";
+        input.style.height = Math.min(input.scrollHeight, 120) + "px";
+      });
+
+      window.addEventListener("DOMContentLoaded", function(){
+        if (!window.DilAvatar){
+          document.getElementById("warn").classList.add("show");
+          return;
+        }
+        DilAvatar.mount("avatarHost");
+        setStatus("Hazır");
+      });
+    })();
+  </script>
+</body>
+</html>
