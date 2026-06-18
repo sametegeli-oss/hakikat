@@ -136,9 +136,9 @@ function injectCss() {
   style.textContent = `
     .da8-box{
       --da-border:#2dd4bf;
-      width:100%;
-      max-width:300px;
-      min-width:120px;
+      width:300px;
+      max-width:100%;
+      min-width:180px;
       margin:0 auto;
       color:#e5e7eb;
       font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
@@ -249,6 +249,7 @@ function render() {
   state.layer.innerHTML = `
     <img class="da8-img" alt="Erkek avatar"
       src="${AVATAR_IMAGE}"
+      onerror="this.outerHTML='<div style=&quot;display:grid;place-items:center;width:100%;height:100%;color:white;background:#7f1d1d;font:700 14px system-ui;text-align:center;padding:20px;box-sizing:border-box&quot;>Avatar görseli yüklenemedi</div>'"
       style="transform:translate(${c.imageX}%, ${c.imageY}%) scale(${c.imageZoom});" />
     ${overlaySvg(c)}
   `;
