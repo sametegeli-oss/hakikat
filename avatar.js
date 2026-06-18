@@ -259,7 +259,7 @@ function overlaySvg(c) {
   var blinkDisplay = state.isBlinking ? "block" : "none";
   var brows = c.browVisible ? browSvg(c, "left") + browSvg(c, "right") : "";
   return `
-    <svg class="da8-svg" viewBox="0 0 1000 1000" aria-hidden="true">
+    <svg class="da8-svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
       <g opacity="${c.browOpacity}">
         ${brows}
       </g>
