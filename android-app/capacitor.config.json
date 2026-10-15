@@ -1,0 +1,19 @@
+{
+  "appId": "com.sametegeli.hakikat",
+  "appName": "Hakikat",
+  "webDir": "www",
+  "server": {
+    "url": "https://sametegeli-oss.github.io/hakikat/",
+    "androidScheme": "https",
+    "cleartext": false,
+    "allowNavigation": [
+      "sametegeli-oss.github.io",
+      "www.hakikat.com",
+      "hakikat.com"
+    ]
+  },
+  "android": {
+    "backgroundColor": "#0b1120",
+    "allowMixedContent": false
+  }
+}
